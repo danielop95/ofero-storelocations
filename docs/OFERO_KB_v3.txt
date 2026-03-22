@@ -1,0 +1,1340 @@
+CIUDADES CON TIENDAS OFERO EN COLOMBIA:
+Aguachica, Apartado, Arauca, Armenia, Baranoa, Barrancabermeja, Barranquilla, Becerril, Bello, Bogotá, Bolivar, Bosconia, Bucaramanga, Buenaventura, Buga, Cajica, Cali, Carmen De Bolivar, Cartagena, Cartago, Caucacia, Cerete, Chinu, Cienaga, Cienaga De Oro, Codazzi, Corozal, Coveñas, Cucuta, Curumani, El Banco, Envigado, Florencia, Fonseca, Fundación, Fusagasuga, Galapa, Ibague, Itagui, Jamundi, La Dorada, La Jagua, La Loma, Lorica, Luruaco, Magangue, Maicao, Majagual, Malambo, Manizales, Medellin, Montelibano, Monteria, Neiva, Ocaña, Palmira, Pamplona, Pereira, Pitalito, Pivijai, Planeta Rica, Plato, Puerto Boyaca, Puerto Colombia, Riohacha, Rionegro, Sabanarlaga, Sahagún, Salamina, San Andres, San Gil, San Juan, Santa Cruz De Mompox, Santa Marta, Santo Tomas, Sincelejo, Soledad, Tubarco, Tulua, Tunja, Turbo, Uraba, Valledupar, Villavicencio, Yopal
+
+============================================================
+
+CIUDAD: AGUACHICA | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en Aguachica:
+  Nombre: Ofero Aguachica — Calle 5
+  Dirección: calle 5 # 18-63
+  Teléfono: 312 2052518
+
+--- FIN TIENDAS AGUACHICA ---
+
+CIUDAD: APARTADO | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Apartado:
+  Nombre: Ofero Apartado — Carrera 98
+  Dirección: CARRERA 98 # 95 - 25 - Barrio Fundadores
+  Teléfono: 321 5261638
+
+--- FIN TIENDAS APARTADO ---
+
+CIUDAD: ARAUCA | DEPARTAMENTO: ARAUCA | TIENDAS: 1
+
+Tienda 1 en Arauca:
+  Nombre: Ofero Arauca — Calle 22
+  Dirección: CLL 22 No. 19 -35
+  Teléfono: 3193263325
+
+--- FIN TIENDAS ARAUCA ---
+
+CIUDAD: ARMENIA | DEPARTAMENTO: QUINDIO | TIENDAS: 2
+
+Tienda 1 en Armenia:
+  Nombre: Ofero Armenia — Carrera 19
+  Dirección: Carrera 19 #12-26
+  Teléfono: 3019721050
+
+Tienda 2 en Armenia:
+  Nombre: Ofero Electrimotors Armenia — Carrera 18
+  Dirección: Cra 18 21-10 local 2
+  Teléfono: 311 6515100
+
+--- FIN TIENDAS ARMENIA ---
+
+CIUDAD: BARANOA | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Baranoa:
+  Nombre: Ofero Baranoa — Carrera 19
+  Dirección: carrera 19 celle 13c barrio Caldas
+  Teléfono: 3243620132
+
+--- FIN TIENDAS BARANOA ---
+
+CIUDAD: BARRANCABERMEJA | DEPARTAMENTO: SANTANDER | TIENDAS: 1
+
+Tienda 1 en Barrancabermeja:
+  Nombre: Ofero Barrancabermeja — Calle 50
+  Dirección: Calle 50#13-02
+  Teléfono: 3122355687
+
+--- FIN TIENDAS BARRANCABERMEJA ---
+
+CIUDAD: BARRANQUILLA | DEPARTAMENTO: ATLANTICO | TIENDAS: 20
+
+Tienda 1 en Barranquilla:
+  Nombre: Ofero Calle 53
+  Dirección: CALLE 53 No 46 - 187
+  Teléfono: 3004433085
+
+Tienda 2 en Barranquilla:
+  Nombre: Ofero Calle 64
+  Dirección: Cra 21B # 64-10
+  Teléfono: 3145577836
+
+Tienda 3 en Barranquilla:
+  Nombre: Ofero Calle 68
+  Dirección: CRA 43 # 68-16
+  Teléfono: 3023680315
+
+Tienda 4 en Barranquilla:
+  Nombre: Ofero Calle 72
+  Dirección: Calle 72#45-50 local 10 - Barranquilla
+  Teléfono: 322 6562837
+
+Tienda 5 en Barranquilla:
+  Nombre: Ofero Cc Nuestro Atlantico
+  Dirección: Av. Murillo #131 a 13-167, Soledad, Barranquilla, Atlántico
+  Teléfono: 311 4235892
+
+Tienda 6 en Barranquilla:
+  Nombre: Ofero Cc Parque Alegra
+  Dirección: CC PARQUE ALEGRA
+  Teléfono: 3233306574
+
+Tienda 7 en Barranquilla:
+  Nombre: Ofero Centro — Carrera 45B
+  Dirección: CRA 45b # 34-37 LOCAL 8
+  Teléfono: 3011379888
+
+Tienda 8 en Barranquilla:
+  Nombre: Ofero Exito Murillo Baq
+  Dirección: Exito Murillo, Barranquilla
+  Teléfono: 311 2555060
+
+Tienda 9 en Barranquilla:
+  Nombre: Ofero Jm — Calle 34
+  Dirección: Calle 34 cra 45c- Local 01- C.C PORTAl de la 34
+  Teléfono: 300 2230203
+
+Tienda 10 en Barranquilla:
+  Nombre: Ofero La 21 — Calle 47
+  Dirección: CALLE 47 # 20 - 170
+  Teléfono: 3012758267
+
+Tienda 11 en Barranquilla:
+  Nombre: Ofero La 46 — Carrera 46
+  Dirección: CRA 46 # 82-241
+  Teléfono: 3003252596
+
+Tienda 12 en Barranquilla:
+  Nombre: Ofero La 75 — Calla 75 #44-73
+  Dirección: Calla 75 #44-73 esquina
+  Teléfono: 312 2076194
+
+Tienda 13 en Barranquilla:
+  Nombre: Ofero La 8 — Carrera 8
+  Dirección: CRA 8 # 44-12
+  Teléfono: 3046229486
+
+Tienda 14 en Barranquilla:
+  Nombre: Ofero La Ciudadela — Calle 46
+  Dirección: Calle 46 No 1Sur - 08, Ciudadela 20 de julio
+  Teléfono: 300 1666004
+
+Tienda 15 en Barranquilla:
+  Nombre: Ofero La Paz — Carrera 13
+  Dirección: Dirección  CRA 13 calle 109A esquina Barrio la Paz
+  Teléfono: 3137756837
+
+Tienda 16 en Barranquilla:
+  Nombre: Ofero La Pradera — Calle 110
+  Dirección: Calle 110 No. 34 - 137 Eds Primax La Pradera
+  Teléfono: 3205926816
+
+Tienda 17 en Barranquilla:
+  Nombre: Ofero Metropolitano
+  Dirección: Exito metropolitano barranquilla
+  Teléfono: 313 5829104
+
+Tienda 18 en Barranquilla:
+  Nombre: Ofero Paseo Bolivar 38 — Calle 34
+  Dirección: calle 34 # 38 - 25 LOCAL 1
+  Teléfono: 3024820103
+
+Tienda 19 en Barranquilla:
+  Nombre: Ofero Santo Domingo — Calle 90
+  Dirección: calle 90# 2b -40 local 2 Barranquilla
+  Teléfono: 3234359174
+
+Tienda 20 en Barranquilla:
+  Nombre: Ofero Simon Bolivar — Calle 19
+  Dirección: CALLE 19 # 6C-16
+  Teléfono: 3233314083
+
+--- FIN TIENDAS BARRANQUILLA ---
+
+CIUDAD: BECERRIL | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en Becerril:
+  Nombre: Ofero Becerril — Carrera 5
+  Dirección: Carrera 5#11-14 avenida principal Al ladodel almacén el tsunami
+  Teléfono: 321 8507126
+
+--- FIN TIENDAS BECERRIL ---
+
+CIUDAD: BELLO | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Bello:
+  Nombre: Ofero Bello — Carrera 51
+  Dirección: LOCAL SITUADO EN: CARRERA 51 # 51-36 de BELLO DEL BARRIO PEREZ
+  Teléfono: 304 5981034
+
+--- FIN TIENDAS BELLO ---
+
+CIUDAD: BOGOTÁ | DEPARTAMENTO: CUNDINAMARCA | TIENDAS: 27
+
+Tienda 1 en Bogotá:
+  Nombre: Ofero Alamos — Calle 72
+  Dirección: Calle 72 #103-12
+  Teléfono: 3135176995
+
+Tienda 2 en Bogotá:
+  Nombre: Ofero Avenida Boyaca
+  Dirección: Avenida Boyacá # 68B - 41
+  Teléfono: 3214198411
+
+Tienda 3 en Bogotá:
+  Nombre: Ofero Avenida Cali Aures
+  Dirección: Calle 137b #104-35
+  Teléfono: 3205959536
+
+Tienda 4 en Bogotá:
+  Nombre: Ofero Avenida Cra 30
+  Dirección: Avenida Cra. 30 # 41 -25 EDS Texaco
+  Teléfono: 3228844750
+
+Tienda 5 en Bogotá:
+  Nombre: Ofero Calle 80
+  Dirección: Avenida calle 80 No. 82A - 22
+  Teléfono: 3209792639
+
+Tienda 6 en Bogotá:
+  Nombre: Ofero Calle 85
+  Dirección: Cra 15 # 85-19 local 1
+  Teléfono: 3228888613
+
+Tienda 7 en Bogotá:
+  Nombre: Ofero Cedritos — Calle 134
+  Dirección: Calle 134 # 19-46
+  Teléfono: 323 6396681
+
+Tienda 8 en Bogotá:
+  Nombre: Ofero Centro De Experiencia Kennedy — 78 # 39A
+  Dirección: 78 # 39a Sur - 82
+  Teléfono: 3046663623
+
+Tienda 9 en Bogotá:
+  Nombre: Ofero Centro De Experiencia Niza — Avenida Suba
+  Dirección: Avenida suba #128a-60
+  Teléfono: 314 6044862
+
+Tienda 10 en Bogotá:
+  Nombre: Ofero Chapinero — Calle 57
+  Dirección: CALLE 57 # 13-42 LOCAL 1
+  Teléfono: 3114435753
+
+Tienda 11 en Bogotá:
+  Nombre: Ofero Escuela Militar — Calle 80
+  Dirección: Calle 80 No. 56-39
+  Teléfono: 3228095995
+
+Tienda 12 en Bogotá:
+  Nombre: Ofero Fontibon — Carrera 100
+  Dirección: CRA 100 # 20C - 07
+  Teléfono: 321 9133147
+
+Tienda 13 en Bogotá:
+  Nombre: Ofero Galerias — Carrera 24
+  Dirección: CARRERA 24 # 51- 04 esquina
+  Teléfono: 3102412888
+
+Tienda 14 en Bogotá:
+  Nombre: Ofero La 74 — Calle 74
+  Dirección: Calle 74#15-12
+  Teléfono: 314 6044916
+
+Tienda 15 en Bogotá:
+  Nombre: Ofero La Alqueria — Autopista Sur
+  Dirección: Autopista Sur  #52-10
+  Teléfono: 3113585986
+
+Tienda 16 en Bogotá:
+  Nombre: Ofero La Campiña — Carrera 92
+  Dirección: Carrera 92 # 147b-11 - BARRIO SUBA
+  Teléfono: 3113585988
+
+Tienda 17 en Bogotá:
+  Nombre: Ofero La Estrada Av Rojas
+  Dirección: Carrera 70 # 64-74 local 2
+  Teléfono: 3113587220
+
+Tienda 18 en Bogotá:
+  Nombre: Ofero Las Américas — Avenida Las
+  Dirección: Avenida las americas(calle 6A)  # 71A-60
+  Teléfono: 3228836931
+
+Tienda 19 en Bogotá:
+  Nombre: Ofero Las Ferias — Calle 72
+  Dirección: Calle 72 # 76-84
+  Teléfono: 3113585990
+
+Tienda 20 en Bogotá:
+  Nombre: Ofero Lourdes Chapinero — Calle 13
+  Dirección: Calle 13 # 60 Esquina
+  Teléfono: 3113587225
+
+Tienda 21 en Bogotá:
+  Nombre: Ofero Niza — Tranv.60 # 127D
+  Dirección: tranv.60 # 127D -06 local 1
+  Teléfono: 3228834722
+
+Tienda 22 en Bogotá:
+  Nombre: Ofero Prado Veraniego — Calle 130
+  Dirección: Calle 130#45-35
+  Teléfono: 314 6044895
+
+Tienda 23 en Bogotá:
+  Nombre: Ofero Restrepo — Transversal 18
+  Dirección: Transversal 18 SUR # 14a 53
+  Teléfono: 3106642901
+
+Tienda 24 en Bogotá:
+  Nombre: Ofero Ricauter — Calle 13
+  Dirección: Calle 13 # 28 -25
+  Teléfono: 3228836946
+
+Tienda 25 en Bogotá:
+  Nombre: Ofero Suba — Carrera 50
+  Dirección: Cra 50 # 91-92
+  Teléfono: 311 4464212
+
+Tienda 26 en Bogotá:
+  Nombre: Ofero Venecia — Carrera 53
+  Dirección: Carrera 53 sur # 49-40
+  Teléfono: 3113621424
+
+Tienda 27 en Bogotá:
+  Nombre: Tienda Virtual
+  Dirección: VIRTUAL
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS BOGOTÁ ---
+
+CIUDAD: BOLIVAR | DEPARTAMENTO: CARTAGENA | TIENDAS: 1
+
+Tienda 1 en Bolivar:
+  Nombre: Ofero Villa Estrella — Carretera De La
+  Dirección: Carretera de la Cordialidad 54-65, Cartagena 130006, Bolívar, Colombia
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS BOLIVAR ---
+
+CIUDAD: BOSCONIA | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en Bosconia:
+  Nombre: Ofero Bosconia — Calle 18
+  Dirección: Calle 18 # 17A-55
+  Teléfono: 322 6707547
+
+--- FIN TIENDAS BOSCONIA ---
+
+CIUDAD: BUCARAMANGA | DEPARTAMENTO: SANTANDER | TIENDAS: 11
+
+Tienda 1 en Bucaramanga:
+  Nombre: Ofero Cabecera — Calle 51
+  Dirección: Calle 51 33-24
+  Teléfono: 3159607627
+
+Tienda 2 en Bucaramanga:
+  Nombre: Ofero Centro — Carrera 15
+  Dirección: CRA 15 #37-27 centro
+  Teléfono: 318 1227935
+
+Tienda 3 en Bucaramanga:
+  Nombre: Ofero Floridablanca — Parque Principal Carrera
+  Dirección: Parque principal  Carrera 8#5-60
+  Teléfono: 300 2736849
+
+Tienda 4 en Bucaramanga:
+  Nombre: Ofero Giron Bucaramanga — Avenida Caneyes
+  Dirección: Av caneyes cll 25 21b-114
+  Teléfono: 3209272641
+
+Tienda 5 en Bucaramanga:
+  Nombre: Ofero La 21 Bucaramanga — Carrera 21
+  Dirección: Carrera 21 #37-16
+  Teléfono: 3219409049
+
+Tienda 6 en Bucaramanga:
+  Nombre: Ofero La 27 Bucaramanga — Calle 55A
+  Dirección: Calle 55A 27-04
+  Teléfono: 3209272626
+
+Tienda 7 en Bucaramanga:
+  Nombre: Ofero La Isla Bucaramanga — Carrera 18
+  Dirección: Carrera 18#54-60
+  Teléfono: 3209267267
+
+Tienda 8 en Bucaramanga:
+  Nombre: Ofero Parque De Los Niños — Carrera 27
+  Dirección: Cra 27 34-66
+  Teléfono: 301 4377928
+
+Tienda 9 en Bucaramanga:
+  Nombre: Ofero Pedregosa — Carrera 33
+  Dirección: Cra 33 94-23
+  Teléfono: 3045809629
+
+Tienda 10 en Bucaramanga:
+  Nombre: Ofero Provenza Bucaramanga — Carrera 27
+  Dirección: Carrera 27#104-11 local 2 y 3
+  Teléfono: 3184849993
+
+Tienda 11 en Bucaramanga:
+  Nombre: Ofero Sotomayor Bucaramanga — Carrera 33
+  Dirección: Carrera 33#58-16
+  Teléfono: 3202465871
+
+--- FIN TIENDAS BUCARAMANGA ---
+
+CIUDAD: BUENAVENTURA | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Buenaventura:
+  Nombre: Ofero Buenaventura — Carrera 6
+  Dirección: CRA 6 #2-36 Local 102
+  Teléfono: 310 7078548
+
+--- FIN TIENDAS BUENAVENTURA ---
+
+CIUDAD: BUGA | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Buga:
+  Nombre: Ofero Buga — Carrera 9
+  Dirección: Carrera 9 #14-01 Esquina Buga Valle
+  Teléfono: 3024296633
+
+--- FIN TIENDAS BUGA ---
+
+CIUDAD: CAJICA | DEPARTAMENTO: CUNDINAMARCA | TIENDAS: 1
+
+Tienda 1 en Cajica:
+  Nombre: Ofero Cajica — Carrera 5
+  Dirección: Cra 5 No.  3 -177 sur local 102
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS CAJICA ---
+
+CIUDAD: CALI | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 12
+
+Tienda 1 en Cali:
+  Nombre: Ofero Cali Carrera 23
+  Dirección: Calle 15 #23-07 aranjuez
+  Teléfono: 314 5811079
+
+Tienda 2 en Cali:
+  Nombre: Ofero Cali Centro — Carrera 5
+  Dirección: Cra 5 #15-49
+  Teléfono: 315 1812511
+
+Tienda 3 en Cali:
+  Nombre: Ofero Cali Cra 15
+  Dirección: CRA 15 # 10-49
+  Teléfono: 3169380086
+
+Tienda 4 en Cali:
+  Nombre: Ofero Cali Norte — Avenida 3
+  Dirección: AV 3 norte # 47 N - 48 LC 27 LC 27
+  Teléfono: 312 6809691
+
+Tienda 5 en Cali:
+  Nombre: Ofero Cali Roosevelt — Avenida Roosevelt
+  Dirección: Av roosevelt #25-70
+  Teléfono: 3216433681
+
+Tienda 6 en Cali:
+  Nombre: Ofero Calima — Carrera 5N
+  Dirección: Carrera 5n #68 n 36 calima
+  Teléfono: 3126809692
+
+Tienda 7 en Cali:
+  Nombre: Ofero Cañaveralejo — Cra 57#40-49 Edificio
+  Dirección: cra 57#40-49 edificio atalanta
+  Teléfono: 312 8812938
+
+Tienda 8 en Cali:
+  Nombre: Ofero Centro Cra 8
+  Dirección: Cra 8 # 22A LOCAL 16 BR OBRERO
+  Teléfono: 3108657160
+
+Tienda 9 en Cali:
+  Nombre: Ofero La 14 Cali — Calle 14
+  Dirección: Calle 14 # 4-19 Cali
+  Teléfono: 304 6063509
+
+Tienda 10 en Cali:
+  Nombre: Ofero La 66 Cali — Calle 13
+  Dirección: CALLE 13 NO 65C - 42 LOCAL 2, CALI
+  Teléfono: 304 3958526
+
+Tienda 11 en Cali:
+  Nombre: Ofero Marroquin Cali — Carrera 26
+  Dirección: Carrera 26 M1 # 83-10 marroquin 2
+  Teléfono: 350 5344053
+
+Tienda 12 en Cali:
+  Nombre: Ofero Valle Grande — Carrera 23
+  Dirección: Carrera 23 no 89-19 valle grande local 8
+  Teléfono: 324 4472336
+
+--- FIN TIENDAS CALI ---
+
+CIUDAD: CARMEN DE BOLIVAR | DEPARTAMENTO: BOLIVAR | TIENDAS: 1
+
+Tienda 1 en Carmen De Bolivar:
+  Nombre: Ofero Carmen De Bolivar — Calle 25
+  Dirección: Calle 25 41-77 Carmen de Bolivar
+  Teléfono: 320 7400556
+
+--- FIN TIENDAS CARMEN DE BOLIVAR ---
+
+CIUDAD: CARTAGENA | DEPARTAMENTO: BOLIVAR | TIENDAS: 10
+
+Tienda 1 en Cartagena:
+  Nombre: Ofero Basurto — Calle 30
+  Dirección: Calle 30# 32a-02
+  Teléfono: 301 9105958
+
+Tienda 2 en Cartagena:
+  Nombre: Ofero Bosque — Avenida.
+  Dirección: Av. El Bosque - Transversal 54, Tacarigua Mz 1 Lote 9
+  Teléfono: 3243933390
+
+Tienda 3 en Cartagena:
+  Nombre: Ofero Cartagena Centro — Calle 32
+  Dirección: Calle 32# 10-85 / Centro - Av Daniel Lemetre
+  Teléfono: 3246363487
+
+Tienda 4 en Cartagena:
+  Nombre: Ofero Cc La Castellana
+  Dirección: Centro Comercial Entrada Principal El Consulado
+Av. Pedro de Heredia Calle 30 # 30 - 31 - Sector El Rubí.
+  Teléfono: 3233666004
+
+Tienda 5 en Cartagena:
+  Nombre: Ofero Cc Los Ejecutivos
+  Dirección: Centro Comercial Los Ejecutivos
+  Teléfono: 3014179306
+
+Tienda 6 en Cartagena:
+  Nombre: Ofero Cc Mall Plaza
+  Dirección: Avenida Pedro de Heredia Carrera 13 #31 - 45 - Diagonal a banco Bogotá
+  Teléfono: 3243915396
+
+Tienda 7 en Cartagena:
+  Nombre: Ofero El Pozon — Barrio El Pozon
+  Dirección: Barrio el pozon tr 74 52 111 local 1
+  Teléfono: 3207484379
+
+Tienda 8 en Cartagena:
+  Nombre: Ofero Gran Manzana
+  Dirección: CENTRO COMERCIAL GRAN MANZANA
+  Teléfono: 323 6405774
+
+Tienda 9 en Cartagena:
+  Nombre: Ofero La Castellana
+  Dirección: La Castellana Calle 31 # 63C  - 92 Local 8 - Centro Comercial Villa Sandra
+  Teléfono: 301 9578060
+
+Tienda 10 en Cartagena:
+  Nombre: Ofero Pie De La Popa — Calle 32
+  Dirección: Calle 32 #21- 131 lote B - Av pedro de Heredia / Al lado de la fundación de la mujer
+  Teléfono: 3006532525
+
+--- FIN TIENDAS CARTAGENA ---
+
+CIUDAD: CARTAGO | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Cartago:
+  Nombre: Ofero Cartago — Calle 10
+  Dirección: Calle 10#9-83 Cartago valle del Cauca
+  Teléfono: 3116805612
+
+--- FIN TIENDAS CARTAGO ---
+
+CIUDAD: CAUCACIA | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Caucacia:
+  Nombre: Ofero Caucacia — Carrera 20
+  Dirección: Carrera 20 CL 12 - 37
+  Teléfono: 322 9084514
+
+--- FIN TIENDAS CAUCACIA ---
+
+CIUDAD: CERETE | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Cerete:
+  Nombre: Ofero Cerete — Calle 14
+  Dirección: Cll 14 # 15-32
+  Teléfono: 302 3589181
+
+--- FIN TIENDAS CERETE ---
+
+CIUDAD: CHINU | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Chinu:
+  Nombre: Ofero Chinu — Carrera 7
+  Dirección: CR 7 CL 19-26 bajando la takazuan , chinú
+  Teléfono: 320 6624281
+
+--- FIN TIENDAS CHINU ---
+
+CIUDAD: CIENAGA | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en Cienaga:
+  Nombre: Ofero Cienaga — Carrera 13
+  Dirección: CRA 13 # 18-29
+  Teléfono: 3233224643
+
+--- FIN TIENDAS CIENAGA ---
+
+CIUDAD: CIENAGA DE ORO | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Cienaga De Oro:
+  Nombre: Ofero Cienaga De Oro — Cr15 No.786 Calle
+  Dirección: CR15 no.786 calle del comercio Barrio centro
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS CIENAGA DE ORO ---
+
+CIUDAD: CODAZZI | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en Codazzi:
+  Nombre: Ofero Codazzi — Calle 19
+  Dirección: CALLE 19 # 15 - 114 LOCAL 2
+  Teléfono: 3226605797
+
+--- FIN TIENDAS CODAZZI ---
+
+CIUDAD: COROZAL | DEPARTAMENTO: SUCRE | TIENDAS: 1
+
+Tienda 1 en Corozal:
+  Nombre: Ofero Corozal — Cr 26 #
+  Dirección: Cr 26 # 32-15
+  Teléfono: 3242670796
+
+--- FIN TIENDAS COROZAL ---
+
+CIUDAD: COVEÑAS | DEPARTAMENTO: SUCRE | TIENDAS: 1
+
+Tienda 1 en Coveñas:
+  Nombre: Ofero Coveñas — Calle 9C
+  Dirección: Calle 9c # 24-22
+  Teléfono: 3246803632
+
+--- FIN TIENDAS COVEÑAS ---
+
+CIUDAD: CUCUTA | DEPARTAMENTO: NORTE DE SANTANDER | TIENDAS: 5
+
+Tienda 1 en Cucuta:
+  Nombre: Ofero Cucúta Diagonal
+  Dirección: Diagonal Santander # 8 - 16 Cúcuta
+  Teléfono: 300 1948686
+
+Tienda 2 en Cucuta:
+  Nombre: Ofero Cucúta Principal — Diagonal Santander
+  Dirección: DIAGONAL SANTANDER # 8 - 28
+  Teléfono: 3132715503
+
+Tienda 3 en Cucuta:
+  Nombre: Ofero Gran Colombia — Av Gran
+  Dirección: av gran colombia 5E - A DOS CUADRAS DEL PALACIO DE JUSTICIA
+  Teléfono: 3134352889
+
+Tienda 4 en Cucuta:
+  Nombre: Ofero Kesla Cucuta (Diagonal)
+  Dirección: DIAGONAL SANTANDER # 8-16-A MEDIA CUADRA DE LA FUENTE LUNINOSA
+  Teléfono: 3132715503
+
+Tienda 5 en Cucuta:
+  Nombre: Ofero Kesla Malecon — Avenida 9E
+  Dirección: Avenida 9e 11-131 malecon al lado de cocoloco
+  Teléfono: 3118269681
+
+--- FIN TIENDAS CUCUTA ---
+
+CIUDAD: CURUMANI | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en Curumani:
+  Nombre: Ofero Curumani — Carretera Central #17-05
+  Dirección: Carretera Central #17-05
+  Teléfono: 3122060167
+
+--- FIN TIENDAS CURUMANI ---
+
+CIUDAD: EL BANCO | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en El Banco:
+  Nombre: Ofero El Banco — Calle 8
+  Dirección: CL 8 CR 2-89 APTO3
+  Teléfono: 3219573558
+
+--- FIN TIENDAS EL BANCO ---
+
+CIUDAD: ENVIGADO | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Envigado:
+  Nombre: Ofero Envigado — Calle 33
+  Dirección: CL 33 B SUR 42 8
+  Teléfono: 3046737555
+
+--- FIN TIENDAS ENVIGADO ---
+
+CIUDAD: FLORENCIA | DEPARTAMENTO: CAQUETA | TIENDAS: 1
+
+Tienda 1 en Florencia:
+  Nombre: Ofero Florencia — Calle13
+  Dirección: Calle13 #10-33
+  Teléfono: 3016569381
+
+--- FIN TIENDAS FLORENCIA ---
+
+CIUDAD: FONSECA | DEPARTAMENTO: LA GUAJIRA | TIENDAS: 1
+
+Tienda 1 en Fonseca:
+  Nombre: Ofero Fonseca — Diagonal 12
+  Dirección: Diagonal 12 # 21-64
+  Teléfono: 318 9422983
+
+--- FIN TIENDAS FONSECA ---
+
+CIUDAD: FUNDACIÓN | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en Fundación:
+  Nombre: Ofero Fundación — Carrera 8
+  Dirección: Carrera 8 # 9-82
+  Teléfono: 301 9767616
+
+--- FIN TIENDAS FUNDACIÓN ---
+
+CIUDAD: FUSAGASUGA | DEPARTAMENTO: CUNDINAMARCA | TIENDAS: 1
+
+Tienda 1 en Fusagasuga:
+  Nombre: Ofero Fusagasuga Multimarca — Calle 8
+  Dirección: Calle 8, Av las palmas No. 5-49
+  Teléfono: 3138002879
+
+--- FIN TIENDAS FUSAGASUGA ---
+
+CIUDAD: GALAPA | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Galapa:
+  Nombre: Ofero Galapa — Calle 10
+  Dirección: Cl 10 #22-69 LC 2
+  Teléfono: 300 8314317
+
+--- FIN TIENDAS GALAPA ---
+
+CIUDAD: IBAGUE | DEPARTAMENTO: TOLIMA | TIENDAS: 1
+
+Tienda 1 en Ibague:
+  Nombre: Ofero Ibague — Carrera 5
+  Dirección: CRA 5 #19-141 LOCAL ESQUINA
+  Teléfono: 3228940555
+
+--- FIN TIENDAS IBAGUE ---
+
+CIUDAD: ITAGUI | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Itagui:
+  Nombre: Ofero Itagui — Carrera 49
+  Dirección: Cra 49 # 52-04
+  Teléfono: 3216687643
+
+--- FIN TIENDAS ITAGUI ---
+
+CIUDAD: JAMUNDI | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Jamundi:
+  Nombre: Ofero Jamundí — Calle 10
+  Dirección: CALLE 10#10-63 LOCAL NO. 5 EDIFICIO LIGIA - PROP. HORIZONTAL / JAMUNDI
+  Teléfono: 304 3958549
+
+--- FIN TIENDAS JAMUNDI ---
+
+CIUDAD: LA DORADA | DEPARTAMENTO: CALDAS | TIENDAS: 1
+
+Tienda 1 en La Dorada:
+  Nombre: Ofero La Dorada Cra 2
+  Dirección: Cra 2 # 14-08
+  Teléfono: 321 8991857
+
+--- FIN TIENDAS LA DORADA ---
+
+CIUDAD: LA JAGUA | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en La Jagua:
+  Nombre: Ofero La Jagua — Carretera Central Al
+  Dirección: Carretera Central al lado del D1
+  Teléfono: 3122067820
+
+--- FIN TIENDAS LA JAGUA ---
+
+CIUDAD: LA LOMA | DEPARTAMENTO: CESAR | TIENDAS: 1
+
+Tienda 1 en La Loma:
+  Nombre: Ofero La Loma Cesar — Calle 10
+  Dirección: calle 10 # 12 -104 esquina la loma cesar
+  Teléfono: 323 4791624
+
+--- FIN TIENDAS LA LOMA ---
+
+CIUDAD: LORICA | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Lorica:
+  Nombre: Ofero Lorica — Calle 4A
+  Dirección: CALLE 4A #23a - 12
+  Teléfono: 3013118311
+
+--- FIN TIENDAS LORICA ---
+
+CIUDAD: LURUACO | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Luruaco:
+  Nombre: Ofero Luruaco — Calle 17
+  Dirección: Calle 17 #21-14 frente al parque luruaco
+  Teléfono: 3206338184
+
+--- FIN TIENDAS LURUACO ---
+
+CIUDAD: MAGANGUE | DEPARTAMENTO: BOLIVAR | TIENDAS: 1
+
+Tienda 1 en Magangue:
+  Nombre: Ofero Magangue — Calle 16
+  Dirección: Calle 16 # 11 - 12 Piso 1
+  Teléfono: 301 9765281
+
+--- FIN TIENDAS MAGANGUE ---
+
+CIUDAD: MAICAO | DEPARTAMENTO: LA GUAJIRA | TIENDAS: 1
+
+Tienda 1 en Maicao:
+  Nombre: Ofero Maicao — Calle 12
+  Dirección: CALLE 12 # 8-33
+  Teléfono: 312 6671485
+
+--- FIN TIENDAS MAICAO ---
+
+CIUDAD: MAJAGUAL | DEPARTAMENTO: SUCRE | TIENDAS: 1
+
+Tienda 1 en Majagual:
+  Nombre: Ofero Majagual — Calle 5
+  Dirección: Calle 5 No 19-21 centro
+  Teléfono: 3104788770
+
+--- FIN TIENDAS MAJAGUAL ---
+
+CIUDAD: MALAMBO | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Malambo:
+  Nombre: Ofero Malambo — Calle 10
+  Dirección: calle 10#17-76 malambo
+  Teléfono: 3022058229
+
+--- FIN TIENDAS MALAMBO ---
+
+CIUDAD: MANIZALES | DEPARTAMENTO: CALDAS | TIENDAS: 1
+
+Tienda 1 en Manizales:
+  Nombre: Ofero Manizales — Carrera 22
+  Dirección: Carrera 22#17-58  Centro Manizales
+  Teléfono: 314 8501400
+
+--- FIN TIENDAS MANIZALES ---
+
+CIUDAD: MEDELLIN | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 5
+
+Tienda 1 en Medellin:
+  Nombre: Ofero Alpujarra — Calle 44
+  Dirección: Dirección: Calle 44 #51-33 Ofero ALPUJARRA
+  Teléfono: 3004200527
+
+Tienda 2 en Medellin:
+  Nombre: Ofero Av Colombia La 65 Medellín
+  Dirección: Carrera 65 #50-12
+  Teléfono: 3022176332
+
+Tienda 3 en Medellin:
+  Nombre: Ofero La 33 Medellín — Calle 33
+  Dirección: Calle 33 Cra 65C -109
+  Teléfono: 3019552159
+
+Tienda 4 en Medellin:
+  Nombre: Ofero La 70 Medellín — Calle 44
+  Dirección: Calle 44 #71 -78 piso 1 sector las américas
+  Teléfono: 3022176120
+
+Tienda 5 en Medellin:
+  Nombre: Ofero Poblado Medellín — Calle 10
+  Dirección: Calle 10 # 43dd - 5  poblado
+  Teléfono: 3018520137
+
+--- FIN TIENDAS MEDELLIN ---
+
+CIUDAD: MONTELIBANO | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Montelibano:
+  Nombre: Ofero Montelibano
+  Dirección: PENDIENTE
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS MONTELIBANO ---
+
+CIUDAD: MONTERIA | DEPARTAMENTO: CORDOBA | TIENDAS: 6
+
+Tienda 1 en Monteria:
+  Nombre: Ofero Buenavista — Calle 15
+  Dirección: calle 15# 7-55 local 1  barrio Buenavista montería
+  Teléfono: 3234366340
+
+Tienda 2 en Monteria:
+  Nombre: Ofero Cc Nuestro Monteria
+  Dirección: Transversal 29 #29-69 Centro comercial nuestro montería
+  Teléfono: 3122054558
+
+Tienda 3 en Monteria:
+  Nombre: Ofero Monteria Centro — Carrera 4
+  Dirección: CARRERA 4 #30-58
+  Teléfono: 3024267768
+
+Tienda 4 en Monteria:
+  Nombre: Ofero Monteria El Dorado — Cr 9W Calle
+  Dirección: Cr 9w Cll 23-65 Barrio el dorado
+  Teléfono: 323 4353977
+
+Tienda 5 en Monteria:
+  Nombre: Ofero Monteria La 41 — Carrera 10A
+  Dirección: CARRERA 10a #41 - 10
+  Teléfono: 311 4235922
+
+Tienda 6 en Monteria:
+  Nombre: Ofero Monteria La Granja — Transversal 5
+  Dirección: Transversal 5 # 12 ~ 06
+  Teléfono: 304 6676575
+
+--- FIN TIENDAS MONTERIA ---
+
+CIUDAD: NEIVA | DEPARTAMENTO: HUILA | TIENDAS: 2
+
+Tienda 1 en Neiva:
+  Nombre: Ofero Neiva Centro — Calle 5
+  Dirección: Calle 5 #7-06 Neiva Local #1
+  Teléfono: 3172141533
+
+Tienda 2 en Neiva:
+  Nombre: Ofero Neiva Cra 6
+  Dirección: Carrera 6 #8-10
+  Teléfono: 320 4075736
+
+--- FIN TIENDAS NEIVA ---
+
+CIUDAD: OCAÑA | DEPARTAMENTO: NORTE DE SANTANDER | TIENDAS: 1
+
+Tienda 1 en Ocaña:
+  Nombre: Ofero Ocaña — Calle 7.
+  Dirección: Calle 7. #. 29-74.  Avenida Francisco Fernández de contreras.
+  Teléfono: 3170254890
+
+--- FIN TIENDAS OCAÑA ---
+
+CIUDAD: PALMIRA | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Palmira:
+  Nombre: Ofero Palmira — Carrera 33A
+  Dirección: Carrera 33A # 30 - 61
+  Teléfono: 3207716424
+
+--- FIN TIENDAS PALMIRA ---
+
+CIUDAD: PAMPLONA | DEPARTAMENTO: NORTE DE SANTANDER | TIENDAS: 1
+
+Tienda 1 en Pamplona:
+  Nombre: Ofero Pamplona — Carrera 5
+  Dirección: CRA 5 8B 24 LOC A  EDIFICIO GARCÍA ALVAREZ BARRIO: SAN FRANCISCO
+  Teléfono: 312 5310926
+
+--- FIN TIENDAS PAMPLONA ---
+
+CIUDAD: PEREIRA | DEPARTAMENTO: RISARALDA | TIENDAS: 2
+
+Tienda 1 en Pereira:
+  Nombre: Ofero Dos Quebradas — Dosquebradas Carrera 16#
+  Dirección: Dosquebradas CRA 16# 37-28
+  Teléfono: 312 8700256
+
+Tienda 2 en Pereira:
+  Nombre: Ofero Pereira — Av 30
+  Dirección: av 30 de agosto #36-47
+  Teléfono: 310 3559985
+
+--- FIN TIENDAS PEREIRA ---
+
+CIUDAD: PITALITO | DEPARTAMENTO: HUILA | TIENDAS: 2
+
+Tienda 1 en Pitalito:
+  Nombre: Ofero Pitalito Centro — Cra4 #3-79
+  Dirección: cra4 #3-79
+  Teléfono: 3223668589
+
+Tienda 2 en Pitalito:
+  Nombre: Ofero Pitalito Red Phone — Cra4 # 4-03
+  Dirección: Cra4 # 4-03 esquina
+  Teléfono: 3126242387
+
+--- FIN TIENDAS PITALITO ---
+
+CIUDAD: PIVIJAI | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en Pivijai:
+  Nombre: Ofero Pivijai — Calle 17
+  Dirección: Calle 17 carrera 12-02 Barrio la bonga
+  Teléfono: 3004672046
+
+--- FIN TIENDAS PIVIJAI ---
+
+CIUDAD: PLANETA RICA | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Planeta Rica:
+  Nombre: Ofero Planeta Rica — Carrera 7
+  Dirección: Carrera 7 N 10-64 centro comercial planeta plaza, local 13
+  Teléfono: 300 1948686
+
+--- FIN TIENDAS PLANETA RICA ---
+
+CIUDAD: PLATO | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en Plato:
+  Nombre: Ofero Plato — Calle 12
+  Dirección: CALLE 12 CARRERA 16 - 4 BARRIO EL CARMEN
+  Teléfono: 3107025563
+
+--- FIN TIENDAS PLATO ---
+
+CIUDAD: PUERTO BOYACA | DEPARTAMENTO: BOYACA | TIENDAS: 1
+
+Tienda 1 en Puerto Boyaca:
+  Nombre: Ofero Puerto Boyaca — Carrera 2
+  Dirección: CARRERA 2#11-44
+  Teléfono: 313 7023511
+
+--- FIN TIENDAS PUERTO BOYACA ---
+
+CIUDAD: PUERTO COLOMBIA | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Puerto Colombia:
+  Nombre: Ofero Puerto Colombia — Calle 2
+  Dirección: CALLE 2 # 7-35
+  Teléfono: 3012263986
+
+--- FIN TIENDAS PUERTO COLOMBIA ---
+
+CIUDAD: RIOHACHA | DEPARTAMENTO: LA GUAJIRA | TIENDAS: 1
+
+Tienda 1 en Riohacha:
+  Nombre: Ofero Riohacha — Carrera 15
+  Dirección: CR 15 # CL 15 - 49 APTO 1
+  Teléfono: 323 5639794
+
+--- FIN TIENDAS RIOHACHA ---
+
+CIUDAD: RIONEGRO | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Rionegro:
+  Nombre: Ofero Rionegro — Calle 51
+  Dirección: Calle 51 # 46- 45 LOCAL
+  Teléfono: 323 4684304
+
+--- FIN TIENDAS RIONEGRO ---
+
+CIUDAD: SABANARLAGA | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Sabanarlaga:
+  Nombre: Ofero Sabanalarga Cra 16
+  Dirección: CRA 16#30-07
+  Teléfono: 3016853426
+
+--- FIN TIENDAS SABANARLAGA ---
+
+CIUDAD: SAHAGÚN | DEPARTAMENTO: CORDOBA | TIENDAS: 1
+
+Tienda 1 en Sahagún:
+  Nombre: Ofero Sahagún — Calle 18
+  Dirección: Calle 18 cr 1a avenida hospital
+  Teléfono: 315 9411645
+
+--- FIN TIENDAS SAHAGÚN ---
+
+CIUDAD: SALAMINA | DEPARTAMENTO: MAGDALENA | TIENDAS: 1
+
+Tienda 1 en Salamina:
+  Nombre: Ofero Salamina — Calle 5
+  Dirección: Calle 5 # 6-52 barrio arriba Salamina
+  Teléfono: 3004672046
+
+--- FIN TIENDAS SALAMINA ---
+
+CIUDAD: SAN ANDRES | DEPARTAMENTO: SAN ANDRES | TIENDAS: 1
+
+Tienda 1 en San Andres:
+  Nombre: Ofero San Andres — Avenida Las
+  Dirección: Av Las Américas # 3-165, San Andrés Isla
+  Teléfono: 300 3412506 - 311 7301416
+
+--- FIN TIENDAS SAN ANDRES ---
+
+CIUDAD: SAN GIL | DEPARTAMENTO: SANTANDER | TIENDAS: 1
+
+Tienda 1 en San Gil:
+  Nombre: Ofero San Gil — Carrera 10
+  Dirección: Carrera 10 #9-67 Centro - San Gil
+  Teléfono: 3507853621
+
+--- FIN TIENDAS SAN GIL ---
+
+CIUDAD: SAN JUAN | DEPARTAMENTO: GUAJIRA | TIENDAS: 1
+
+Tienda 1 en San Juan:
+  Nombre: Ofero San Juan Del Cesar — Carrera 6
+  Dirección: CR 6 2 SUR 18 LC 2
+  Teléfono: 3148589796
+
+--- FIN TIENDAS SAN JUAN ---
+
+CIUDAD: SANTA CRUZ DE MOMPOX | DEPARTAMENTO: BOLIVAR | TIENDAS: 1
+
+Tienda 1 en Santa Cruz De Mompox:
+  Nombre: Ofero Santa Cruz De Mompox — Calle 17
+  Dirección: Calle 17 # 3 - 28 Callejon El Tejar. Mompox - Bolivar.
+  Teléfono: 3104777052
+
+--- FIN TIENDAS SANTA CRUZ DE MOMPOX ---
+
+CIUDAD: SANTA MARTA | DEPARTAMENTO: MAGDALENA | TIENDAS: 6
+
+Tienda 1 en Santa Marta:
+  Nombre: Exito Centro Stm
+  Dirección: Exito centro santa marta
+  Teléfono: 3002749339
+
+Tienda 2 en Santa Marta:
+  Nombre: Ofero 11 De Noviembre — Calle 30
+  Dirección: CALLE 30 #74 - 41
+  Teléfono: 3013673299
+
+Tienda 3 en Santa Marta:
+  Nombre: Ofero Exito Buenavista
+  Dirección: Dentro del éxito Buenavista  Calle 32#29A-500
+  Teléfono: 3113487505
+
+Tienda 4 en Santa Marta:
+  Nombre: Ofero Ferrocarril — Carrera 8C
+  Dirección: Kra 8C # 15 -03 barrio el pradito
+  Teléfono: 3234361281
+
+Tienda 5 en Santa Marta:
+  Nombre: Ofero La Bomba/ Las Palmitas — Calle 24
+  Dirección: Calle 24 #11-44 Barrio Bolívar
+  Teléfono: 3117010345
+
+Tienda 6 en Santa Marta:
+  Nombre: Ofero Rodadero — Calle 12A
+  Dirección: CALLE 12A# 17 A 7
+  Teléfono: 3012262625
+
+--- FIN TIENDAS SANTA MARTA ---
+
+CIUDAD: SANTO TOMAS | DEPARTAMENTO: ATLANTICO | TIENDAS: 1
+
+Tienda 1 en Santo Tomas:
+  Nombre: Ofero Santo Tomas — Carrera 11
+  Dirección: Cra 11 # 9 - 21 local 2 Santo tomas
+  Teléfono: 3104774788
+
+--- FIN TIENDAS SANTO TOMAS ---
+
+CIUDAD: SINCELEJO | DEPARTAMENTO: SUCRE | TIENDAS: 3
+
+Tienda 1 en Sincelejo:
+  Nombre: Ofero Alfonso Lopez — Kra 19 #28A
+  Dirección: KRA 19 #28A - 32
+  Teléfono: 3005007262
+
+Tienda 2 en Sincelejo:
+  Nombre: Ofero Av Luis Carlos Galán
+  Dirección: Calle 28#22B-90
+  Teléfono: 318 8205626
+
+Tienda 3 en Sincelejo:
+  Nombre: Ofero Sincelejo Las Peñitas — Carrera 25
+  Dirección: Carrera 25#21-60 Avenidas la peñitas
+  Teléfono: 3004361782
+
+--- FIN TIENDAS SINCELEJO ---
+
+CIUDAD: SOLEDAD | DEPARTAMENTO: ATLANTICO | TIENDAS: 3
+
+Tienda 1 en Soledad:
+  Nombre: Ofero Los Robles — Calle 77
+  Dirección: Calle 77 # 15A – 22 Cc placita los robles
+  Teléfono: 312 2073650
+
+Tienda 2 en Soledad:
+  Nombre: Ofero Plaza Del Sol
+  Dirección: Cra. 32 #30 - 15, Soledad, Atlántico
+  Teléfono: 302 2188175
+
+Tienda 3 en Soledad:
+  Nombre: Ofero Soledad — Calle 18
+  Dirección: calle 18# 28a-29 soledad
+  Teléfono: 3012870707
+
+--- FIN TIENDAS SOLEDAD ---
+
+CIUDAD: TUBARCO | DEPARTAMENTO: BOLIVAR | TIENDAS: 1
+
+Tienda 1 en Tubarco:
+  Nombre: Ofero Turbaco — Manzana A, Lote
+  Dirección: Manzana A,  Lote 2  La Granja - Carretera Troncal / Turbaco, Bolivar
+  Teléfono: 3146309115
+
+--- FIN TIENDAS TUBARCO ---
+
+CIUDAD: TULUA | DEPARTAMENTO: VALLE DEL CAUCA | TIENDAS: 1
+
+Tienda 1 en Tulua:
+  Nombre: Ofero Tuluá — Calle 27
+  Dirección: Local nuevo ofero tulua Calle 27 # 20 - 29barrio centro
+  Teléfono: 3128120244
+
+--- FIN TIENDAS TULUA ---
+
+CIUDAD: TUNJA | DEPARTAMENTO: BOYACA | TIENDAS: 1
+
+Tienda 1 en Tunja:
+  Nombre: Ofero Tunja — Carrera 11
+  Dirección: Cra 11 #16 - 102 Centro, Tunja - Boyacá
+  Teléfono: 3227113599
+
+--- FIN TIENDAS TUNJA ---
+
+CIUDAD: TURBO | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Turbo:
+  Nombre: Ofero Turbo — Carrera 14
+  Dirección: Carrera 14   #100 -27 barrio centro
+  Teléfono: 314 5453184
+
+--- FIN TIENDAS TURBO ---
+
+CIUDAD: URABA | DEPARTAMENTO: ANTIOQUIA | TIENDAS: 1
+
+Tienda 1 en Uraba:
+  Nombre: Ofero San Pedro De Uraba — Calle 50
+  Dirección: Calle 50 carrera 45a 07 PADICELL
+  Teléfono: 3218579143
+
+--- FIN TIENDAS URABA ---
+
+CIUDAD: VALLEDUPAR | DEPARTAMENTO: CESAR | TIENDAS: 11
+
+Tienda 1 en Valledupar:
+  Nombre: Ofero 1 De Mayo — Carrera 18
+  Dirección: Cra 18 D calle 25 esquina # 24-50 Simón bolivar
+  Teléfono: 304 6520272
+
+Tienda 2 en Valledupar:
+  Nombre: Ofero Calle 17
+  Dirección: CALLE 17 #13-68 Local 4
+  Teléfono: 3104589426
+
+Tienda 3 en Valledupar:
+  Nombre: Ofero El Palacio — Diagonal 16
+  Dirección: DG 16 #14-25
+  Teléfono: 3104585087
+
+Tienda 4 en Valledupar:
+  Nombre: Ofero El Tractor — Carrera 7A
+  Dirección: CRA 7A #20D-36
+  Teléfono: 3019105957
+
+Tienda 5 en Valledupar:
+  Nombre: Ofero Glorieta De Los Musicos — Transversal 18
+  Dirección: TRANSVERSAL 18 B #20 b 73 LOCAL 1
+  Teléfono: 3024267813
+
+Tienda 6 en Valledupar:
+  Nombre: Ofero La 17 Con 12 — Calle 17
+  Dirección: Calle 17 # 12-61
+  Teléfono: 300 1948686
+
+Tienda 7 en Valledupar:
+  Nombre: Ofero Los Manguitos — Diagonal 21
+  Dirección: Diagonal 21 #19- local 10 los manguitos
+  Teléfono: 3018652306
+
+Tienda 8 en Valledupar:
+  Nombre: Ofero Simón Bolívar — Carrera 18
+  Dirección: nan
+  Teléfono: 314 6955126
+
+Tienda 9 en Valledupar:
+  Nombre: Ofero Tres Postes — Calle 6C
+  Dirección: calle 6c #16-105 tres postes
+  Teléfono: 3019106300
+
+Tienda 10 en Valledupar:
+  Nombre: Ofero Villalba — Transversal 19
+  Dirección: Transversal 19 # 2d 218 Villalba
+  Teléfono: 3226628767
+
+Tienda 11 en Valledupar:
+  Nombre: Ofero Zona Movil — Carrera 8
+  Dirección: CRA 8 #17-17 LOCAL 25
+  Teléfono: 3015294017
+
+--- FIN TIENDAS VALLEDUPAR ---
+
+CIUDAD: VILLAVICENCIO | DEPARTAMENTO: META | TIENDAS: 3
+
+Tienda 1 en Villavicencio:
+  Nombre: Ofero Villavicencio Catama — Calle 35
+  Dirección: CALLE 35 # 20 D - 06 AVENIDA CATAMA
+  Teléfono: 3103368966
+
+Tienda 2 en Villavicencio:
+  Nombre: Ofero Villavicencio Centro — Calle 53
+  Dirección: calle 53 # 20 D-07
+  Teléfono: 3103368966
+
+Tienda 3 en Villavicencio:
+  Nombre: Ofero Villavicencio La 40 — Avenida 40
+  Dirección: Avenida 40 # 26c 37 Villavicencio
+  Teléfono: 3046810874
+
+--- FIN TIENDAS VILLAVICENCIO ---
+
+CIUDAD: YOPAL | DEPARTAMENTO: CASANARE | TIENDAS: 2
+
+Tienda 1 en Yopal:
+  Nombre: Ofero Yopal Calle 24
+  Dirección: Calle 24#21-11
+  Teléfono: 314 4519299
+
+Tienda 2 en Yopal:
+  Nombre: Ofero Yopal Centro — Carrera 19
+  Dirección: Cra 19 #11-86 Centro
+  Teléfono: 3222529669
+
+--- FIN TIENDAS YOPAL ---

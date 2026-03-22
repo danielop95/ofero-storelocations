@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OFERO — Encuentra tu tienda</title>
+  <link rel="icon" type="image/svg+xml" href="isotipo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ofero-green: #70D84A;
+      --ofero-green-dark: #5cbf3a;
+      --ofero-green-deeper: #4aa32f;
+      --ofero-black: #1D1E21;
+      --ofero-lime: #C5E21B;
+      --ofero-gray-dark: #63666A;
+      --ofero-gray-light: #E8EAEA;
+      --ofero-gray-mid: #47494E;
+      --ofero-white: #ffffff;
+      --ofero-white-soft: #f8f9fa;
+      --font: 'Manrope', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--ofero-green);
+      color: var(--ofero-black);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+    }
+
+    /* ── WATERMARK ── */
+    body::before {
+      content: '';
+      position: fixed;
+      bottom: -5%;
+      right: -5%;
+      width: 320px;
+      height: 320px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53.57 53.57'%3E%3Cg%3E%3Cpath fill='%234aa32f' d='M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53'/%3E%3Cpath fill='%234aa32f' d='M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46'/%3E%3Cpath fill='%234aa32f' d='M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: var(--ofero-black);
+    }
+
+    .header-logo {
+      height: 34px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 32px 20px 24px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--ofero-gray-mid);
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-style: italic;
+    }
+
+    .hero h1 .ofero-f {
+      display: inline-block;
+      width: 1.6em;
+      height: 1.6em;
+      vertical-align: middle;
+      margin: 0 2px;
+      position: relative;
+      top: -2px;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgba(29, 30, 33, 0.6);
+      line-height: 1.5;
+    }
+
+    /* ── MAIN ── */
+    .main {
+      flex: 1;
+      padding: 0 20px 32px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── FILTROS ── */
+    .filters {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .select-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--ofero-black);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .select-group select {
+      width: 100%;
+      padding: 14px 16px;
+      font-family: var(--font);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ofero-black);
+      background-color: var(--ofero-white);
+      border: 2px solid rgba(29, 30, 33, 0.08);
+      border-radius: 12px;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231D1E21' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: border-color 0.2s ease, opacity 0.3s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .select-group select:focus {
+      border-color: var(--ofero-black);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .select-group select:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      background-color: var(--ofero-white-soft);
+    }
+
+    .select-group select option {
+      background-color: var(--ofero-white);
+      color: var(--ofero-black);
+    }
+
+    /* ── CARD ── */
+    .card-container {
+      display: none;
+    }
+
+    .card-container.visible {
+      display: block;
+      animation: fadeSlideUp 0.4s ease-out;
+    }
+
+    .card {
+      background-color: var(--ofero-white);
+      border-radius: 16px;
+      border: none;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      padding: 20px 20px 12px;
+    }
+
+    .card-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--ofero-black);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .card-location {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ofero-gray-dark);
+    }
+
+    .card-body {
+      padding: 0 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: var(--ofero-gray-mid);
+    }
+
+    .card-detail .icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 1px;
+    }
+
+    .card-detail a {
+      color: var(--ofero-green-deeper);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card-detail a:hover {
+      text-decoration: underline;
+    }
+
+    .card-footer {
+      padding: 12px 20px 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex: 1;
+      padding: 14px 12px;
+      font-family: var(--font);
+      font-size: 0.85rem;
+      font-weight: 800;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+    }
+
+    .btn-directions {
+      color: var(--ofero-white);
+      background-color: var(--ofero-black);
+    }
+
+    .btn-directions:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(29, 30, 33, 0.3);
+      background-color: var(--ofero-gray-mid);
+    }
+
+    .btn-whatsapp {
+      color: var(--ofero-white);
+      background-color: #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+      background-color: #20bd5a;
+    }
+
+    .btn-card:active {
+      transform: translateY(0);
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background-color: var(--ofero-black);
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer a {
+      color: var(--ofero-green);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── DESKTOP ── */
+    @media (min-width: 640px) {
+      .hero {
+        padding: 48px 20px 32px;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .main {
+        padding: 0 20px 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img class="header-logo" src="Logo.svg" alt="OFERO">
+  </header>
+
+  <section class="hero">
+    <h1>¡Encuentra tu sede <svg class="ofero-f" viewBox="0 0 53.57 53.57" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53"/><path fill="#ffffff" d="M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46"/><path fill="#ffffff" d="M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z"/></svg> más cercana!</h1>
+    <p>Selecciona tu departamento, ciudad y sede para ver la información de contacto.</p>
+  </section>
+
+  <main class="main">
+    <div class="filters">
+      <div class="select-group">
+        <label for="departamento">Departamento</label>
+        <select id="departamento">
+          <option value="">Selecciona un departamento</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="ciudad">Ciudad</label>
+        <select id="ciudad" disabled>
+          <option value="">Selecciona una ciudad</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="tienda">Tienda</label>
+        <select id="tienda" disabled>
+          <option value="">Selecciona una tienda</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card-container" id="cardContainer" aria-live="polite">
+      <article class="card">
+        <div class="card-header">
+          <div class="card-name" id="cardName"></div>
+          <div class="card-location" id="cardLocation"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-detail">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#47494E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="cardAddress"></span>
+          </div>
+          <div class="card-detail">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#4aa32f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a id="cardPhone" href="#"></a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a class="btn-card btn-directions" id="cardDirections" href="#" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            ¿Cómo llegar?
+          </a>
+          <a class="btn-card btn-whatsapp" href="https://wa.me/573001948686" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Volver al Chat
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    ¿Necesitas ayuda? Llama a nuestra línea nacional: <a href="tel:+573001948686">300 194 8686</a>
+  </footer>
+
+  <script>
+    const tiendas = {
+      "ANTIOQUIA": {
+        "APARTADÓ": [
+          { nombre: "Ofero Apartadó — Carrera 98", direccion: "Carrera 98 # 95 - 25 - Barrio Fundadores", telefono: "3215261638", telefonoDisplay: "321 526 1638" }
+        ],
+        "BELLO": [
+          { nombre: "Ofero Bello — Carrera 51", direccion: "Carrera 51 # 51-36 - Barrio Pérez", telefono: "3045981034", telefonoDisplay: "304 598 1034" }
+        ],
+        "CAUCASIA": [
+          { nombre: "Ofero Caucasia — Carrera 20", direccion: "Carrera 20 Calle 12 - 37", telefono: "3229084514", telefonoDisplay: "322 908 4514" }
+        ],
+        "ENVIGADO": [
+          { nombre: "Ofero Envigado — Calle 33", direccion: "Calle 33B Sur # 42 - 8", telefono: "3046737555", telefonoDisplay: "304 673 7555" }
+        ],
+        "ITAGÜÍ": [
+          { nombre: "Ofero Itagüí — Carrera 49", direccion: "Carrera 49 # 52-04", telefono: "3216687643", telefonoDisplay: "321 668 7643" }
+        ],
+        "MEDELLÍN": [
+          { nombre: "Ofero Alpujarra — Calle 44", direccion: "Calle 44 # 51-33", telefono: "3004200527", telefonoDisplay: "300 420 0527" },
+          { nombre: "Ofero Av Colombia La 65", direccion: "Carrera 65 # 50-12", telefono: "3022176332", telefonoDisplay: "302 217 6332" },
+          { nombre: "Ofero La 33 — Calle 33", direccion: "Calle 33 Carrera 65C - 109", telefono: "3019552159", telefonoDisplay: "301 955 2159" },
+          { nombre: "Ofero La 70 — Calle 44", direccion: "Calle 44 # 71-78 Piso 1 - Las Américas", telefono: "3022176120", telefonoDisplay: "302 217 6120" },
+          { nombre: "Ofero Poblado — Calle 10", direccion: "Calle 10 # 43DD - 5 - Poblado", telefono: "3018520137", telefonoDisplay: "301 852 0137" }
+        ],
+        "RIONEGRO": [
+          { nombre: "Ofero Rionegro — Calle 51", direccion: "Calle 51 # 46-45", telefono: "3234684304", telefonoDisplay: "323 468 4304" }
+        ],
+        "TURBO": [
+          { nombre: "Ofero Turbo — Carrera 14", direccion: "Carrera 14 # 100-27 - Barrio Centro", telefono: "3145453184", telefonoDisplay: "314 545 3184" }
+        ],
+        "URABÁ": [
+          { nombre: "Ofero San Pedro de Urabá — Calle 50", direccion: "Calle 50 Carrera 45A - 07", telefono: "3218579143", telefonoDisplay: "321 857 9143" }
+        ]
+      },
+      "ARAUCA": {
+        "ARAUCA": [
+          { nombre: "Ofero Arauca — Calle 22", direccion: "Calle 22 # 19-35", telefono: "3193263325", telefonoDisplay: "319 326 3325" }
+        ]
+      },
+      "ATLÁNTICO": {
+        "BARANOA": [
+          { nombre: "Ofero Baranoa — Carrera 19", direccion: "Carrera 19 Calle 13C - Barrio Caldas", telefono: "3243620132", telefonoDisplay: "324 362 0132" }
+        ],
+        "BARRANQUILLA": [
+          { nombre: "Ofero Calle 53", direccion: "Calle 53 # 46-187", telefono: "3004433085", telefonoDisplay: "300 443 3085" },
+          { nombre: "Ofero Calle 64", direccion: "Carrera 21B # 64-10", telefono: "3145577836", telefonoDisplay: "314 557 7836" },
+          { nombre: "Ofero Calle 68", direccion: "Carrera 43 # 68-16", telefono: "3023680315", telefonoDisplay: "302 368 0315" },
+          { nombre: "Ofero Calle 72", direccion: "Calle 72 # 45-50 Local 10", telefono: "3226562837", telefonoDisplay: "322 656 2837" },
+          { nombre: "Ofero CC Nuestro Atlántico", direccion: "Av. Murillo # 131A-13-167", telefono: "3114235892", telefonoDisplay: "311 423 5892" },
+          { nombre: "Ofero CC Parque Alegra", direccion: "CC Parque Alegra", telefono: "3233306574", telefonoDisplay: "323 330 6574" },
+          { nombre: "Ofero Centro — Carrera 45B", direccion: "Carrera 45B # 34-37 Local 8", telefono: "3011379888", telefonoDisplay: "301 137 9888" },
+          { nombre: "Ofero Éxito Murillo", direccion: "Éxito Murillo, Barranquilla", telefono: "3112555060", telefonoDisplay: "311 255 5060" },
+          { nombre: "Ofero JM — Calle 34", direccion: "Calle 34 Carrera 45C - Local 01 - CC Portal de la 34", telefono: "3002230203", telefonoDisplay: "300 223 0203" },
+          { nombre: "Ofero La 21 — Calle 47", direccion: "Calle 47 # 20-170", telefono: "3012758267", telefonoDisplay: "301 275 8267" },
+          { nombre: "Ofero La 46 — Carrera 46", direccion: "Carrera 46 # 82-241", telefono: "3003252596", telefonoDisplay: "300 325 2596" },
+          { nombre: "Ofero La 75 — Calle 75", direccion: "Calle 75 # 44-73 Esquina", telefono: "3122076194", telefonoDisplay: "312 207 6194" },
+          { nombre: "Ofero La 8 — Carrera 8", direccion: "Carrera 8 # 44-12", telefono: "3046229486", telefonoDisplay: "304 622 9486" },
+          { nombre: "Ofero La Ciudadela — Calle 46", direccion: "Calle 46 # 1Sur-08 - Ciudadela 20 de Julio", telefono: "3001666004", telefonoDisplay: "300 166 6004" },
+          { nombre: "Ofero La Paz — Carrera 13", direccion: "Carrera 13 Calle 109A Esquina - Barrio La Paz", telefono: "3137756837", telefonoDisplay: "313 775 6837" },
+          { nombre: "Ofero La Pradera — Calle 110", direccion: "Calle 110 # 34-137 - Eds. Primax La Pradera", telefono: "3205926816", telefonoDisplay: "320 592 6816" },
+          { nombre: "Ofero Metropolitano", direccion: "Éxito Metropolitano Barranquilla", telefono: "3135829104", telefonoDisplay: "313 582 9104" },
+          { nombre: "Ofero Paseo Bolívar 38 — Calle 34", direccion: "Calle 34 # 38-25 Local 1", telefono: "3024820103", telefonoDisplay: "302 482 0103" },
+          { nombre: "Ofero Santo Domingo — Calle 90", direccion: "Calle 90 # 2B-40 Local 2", telefono: "3234359174", telefonoDisplay: "323 435 9174" },
+          { nombre: "Ofero Simón Bolívar — Calle 19", direccion: "Calle 19 # 6C-16", telefono: "3233314083", telefonoDisplay: "323 331 4083" }
+        ],
+        "GALAPA": [
+          { nombre: "Ofero Galapa — Calle 10", direccion: "Calle 10 # 22-69 Local 2", telefono: "3008314317", telefonoDisplay: "300 831 4317" }
+        ],
+        "LURUACO": [
+          { nombre: "Ofero Luruaco — Calle 17", direccion: "Calle 17 # 21-14 - Frente al Parque", telefono: "3206338184", telefonoDisplay: "320 633 8184" }
+        ],
+        "MALAMBO": [
+          { nombre: "Ofero Malambo — Calle 10", direccion: "Calle 10 # 17-76", telefono: "3022058229", telefonoDisplay: "302 205 8229" }
+        ],
+        "PUERTO COLOMBIA": [
+          { nombre: "Ofero Puerto Colombia — Calle 2", direccion: "Calle 2 # 7-35", telefono: "3012263986", telefonoDisplay: "301 226 3986" }
+        ],
+        "SABANALARGA": [
+          { nombre: "Ofero Sabanalarga Cra 16", direccion: "Carrera 16 # 30-07", telefono: "3016853426", telefonoDisplay: "301 685 3426" }
+        ],
+        "SANTO TOMÁS": [
+          { nombre: "Ofero Santo Tomás — Carrera 11", direccion: "Carrera 11 # 9-21 Local 2", telefono: "3104774788", telefonoDisplay: "310 477 4788" }
+        ],
+        "SOLEDAD": [
+          { nombre: "Ofero Los Robles — Calle 77", direccion: "Calle 77 # 15A-22 - CC Placita Los Robles", telefono: "3122073650", telefonoDisplay: "312 207 3650" },
+          { nombre: "Ofero Plaza del Sol", direccion: "Carrera 32 # 30-15", telefono: "3022188175", telefonoDisplay: "302 218 8175" },
+          { nombre: "Ofero Soledad — Calle 18", direccion: "Calle 18 # 28A-29", telefono: "3012870707", telefonoDisplay: "301 287 0707" }
+        ]
+      },
+      "BOLÍVAR": {
+        "CARMEN DE BOLÍVAR": [
+          { nombre: "Ofero Carmen de Bolívar — Calle 25", direccion: "Calle 25 # 41-77", telefono: "3207400556", telefonoDisplay: "320 740 0556" }
+        ],
+        "CARTAGENA": [
+          { nombre: "Ofero Basurto — Calle 30", direccion: "Calle 30 # 32A-02", telefono: "3019105958", telefonoDisplay: "301 910 5958" },
+          { nombre: "Ofero Bosque — Avenida El Bosque", direccion: "Av. El Bosque - Transversal 54, Tacarigua Mz 1 Lote 9", telefono: "3243933390", telefonoDisplay: "324 393 3390" },
+          { nombre: "Ofero Cartagena Centro — Calle 32", direccion: "Calle 32 # 10-85 - Av. Daniel Lemaitre", telefono: "3246363487", telefonoDisplay: "324 636 3487" },
+          { nombre: "Ofero CC La Castellana", direccion: "Av. Pedro de Heredia Calle 30 # 30-31 - Sector El Rubí", telefono: "3233666004", telefonoDisplay: "323 366 6004" },
+          { nombre: "Ofero CC Los Ejecutivos", direccion: "Centro Comercial Los Ejecutivos", telefono: "3014179306", telefonoDisplay: "301 417 9306" },
+          { nombre: "Ofero CC Mall Plaza", direccion: "Av. Pedro de Heredia Carrera 13 # 31-45", telefono: "3243915396", telefonoDisplay: "324 391 5396" },
+          { nombre: "Ofero El Pozón — Barrio El Pozón", direccion: "Transversal 74 # 52-111 Local 1", telefono: "3207484379", telefonoDisplay: "320 748 4379" },
+          { nombre: "Ofero Gran Manzana", direccion: "Centro Comercial Gran Manzana", telefono: "3236405774", telefonoDisplay: "323 640 5774" },
+          { nombre: "Ofero La Castellana — Calle 31", direccion: "Calle 31 # 63C-92 Local 8 - CC Villa Sandra", telefono: "3019578060", telefonoDisplay: "301 957 8060" },
+          { nombre: "Ofero Pie de la Popa — Calle 32", direccion: "Calle 32 # 21-131 Lote B - Av. Pedro de Heredia", telefono: "3006532525", telefonoDisplay: "300 653 2525" }
+        ],
+        "MAGANGUÉ": [
+          { nombre: "Ofero Magangué — Calle 16", direccion: "Calle 16 # 11-12 Piso 1", telefono: "3019765281", telefonoDisplay: "301 976 5281" }
+        ],
+        "MOMPOX": [
+          { nombre: "Ofero Santa Cruz de Mompox — Calle 17", direccion: "Calle 17 # 3-28 - Callejón El Tejar", telefono: "3104777052", telefonoDisplay: "310 477 7052" }
+        ],
+        "TURBACO": [
+          { nombre: "Ofero Turbaco — Carretera Troncal", direccion: "Manzana A, Lote 2 - La Granja - Carretera Troncal", telefono: "3146309115", telefonoDisplay: "314 630 9115" }
+        ]
+      },
+      "BOYACÁ": {
+        "PUERTO BOYACÁ": [
+          { nombre: "Ofero Puerto Boyacá — Carrera 2", direccion: "Carrera 2 # 11-44", telefono: "3137023511", telefonoDisplay: "313 702 3511" }
+        ],
+        "TUNJA": [
+          { nombre: "Ofero Tunja — Carrera 11", direccion: "Carrera 11 # 16-102 - Centro", telefono: "3227113599", telefonoDisplay: "322 711 3599" }
+        ]
+      },
+      "CALDAS": {
+        "LA DORADA": [
+          { nombre: "Ofero La Dorada Cra 2", direccion: "Carrera 2 # 14-08", telefono: "3218991857", telefonoDisplay: "321 899 1857" }
+        ],
+        "MANIZALES": [
+          { nombre: "Ofero Manizales — Carrera 22", direccion: "Carrera 22 # 17-58 - Centro", telefono: "3148501400", telefonoDisplay: "314 850 1400" }
+        ]
+      },
+      "CAQUETÁ": {
+        "FLORENCIA": [
+          { nombre: "Ofero Florencia — Calle 13", direccion: "Calle 13 # 10-33", telefono: "3016569381", telefonoDisplay: "301 656 9381" }
+        ]
+      },
+      "CASANARE": {
+        "YOPAL": [
+          { nombre: "Ofero Yopal Calle 24", direccion: "Calle 24 # 21-11", telefono: "3144519299", telefonoDisplay: "314 451 9299" },
+          { nombre: "Ofero Yopal Centro — Carrera 19", direccion: "Carrera 19 # 11-86 - Centro", telefono: "3222529669", telefonoDisplay: "322 252 9669" }
+        ]
+      },
+      "CESAR": {
+        "AGUACHICA": [
+          { nombre: "Ofero Aguachica — Calle 5", direccion: "Calle 5 # 18-63", telefono: "3122052518", telefonoDisplay: "312 205 2518" }
+        ],
+        "BECERRIL": [
+          { nombre: "Ofero Becerril — Carrera 5", direccion: "Carrera 5 # 11-14 - Avenida Principal", telefono: "3218507126", telefonoDisplay: "321 850 7126" }
+        ],
+        "BOSCONIA": [
+          { nombre: "Ofero Bosconia — Calle 18", direccion: "Calle 18 # 17A-55", telefono: "3226707547", telefonoDisplay: "322 670 7547" }
+        ],
+        "CODAZZI": [
+          { nombre: "Ofero Codazzi — Calle 19", direccion: "Calle 19 # 15-114 Local 2", telefono: "3226605797", telefonoDisplay: "322 660 5797" }
+        ],
+        "CURUMANÍ": [
+          { nombre: "Ofero Curumaní — Carretera Central", direccion: "Carretera Central # 17-05", telefono: "3122060167", telefonoDisplay: "312 206 0167" }
+        ],
+        "LA JAGUA": [
+          { nombre: "Ofero La Jagua — Carretera Central", direccion: "Carretera Central - Al lado del D1", telefono: "3122067820", telefonoDisplay: "312 206 7820" }
+        ],
+        "LA LOMA": [
+          { nombre: "Ofero La Loma — Calle 10", direccion: "Calle 10 # 12-104 Esquina", telefono: "3234791624", telefonoDisplay: "323 479 1624" }
+        ],
+        "VALLEDUPAR": [
+          { nombre: "Ofero 1 de Mayo — Carrera 18", direccion: "Carrera 18D Calle 25 Esquina # 24-50 - Simón Bolívar", telefono: "3046520272", telefonoDisplay: "304 652 0272" },
+          { nombre: "Ofero Calle 17", direccion: "Calle 17 # 13-68 Local 4", telefono: "3104589426", telefonoDisplay: "310 458 9426" },
+          { nombre: "Ofero El Palacio — Diagonal 16", direccion: "Diagonal 16 # 14-25", telefono: "3104585087", telefonoDisplay: "310 458 5087" },
+          { nombre: "Ofero El Tractor — Carrera 7A", direccion: "Carrera 7A # 20D-36", telefono: "3019105957", telefonoDisplay: "301 910 5957" },
+          { nombre: "Ofero Glorieta de los Músicos — Transversal 18", direccion: "Transversal 18B # 20B-73 Local 1", telefono: "3024267813", telefonoDisplay: "302 426 7813" },
+          { nombre: "Ofero La 17 con 12 — Calle 17", direccion: "Calle 17 # 12-61", telefono: "3001948686", telefonoDisplay: "300 194 8686" },
+          { nombre: "Ofero Los Manguitos — Diagonal 21", direccion: "Diagonal 21 # 19 - Local 10 - Los Manguitos", telefono: "3018652306", telefonoDisplay: "301 865 2306" },
+          { nombre: "Ofero Simón Bolívar — Carrera 18", direccion: "Carrera 18D Calle 25 Esquina", telefono: "3001948686", telefonoDisplay: "300 194 8686" },
+          { nombre: "Ofero Tres Postes — Calle 6C", direccion: "Calle 6C # 16-105 - Tres Postes", telefono: "3019106300", telefonoDisplay: "301 910 6300" },
+          { nombre: "Ofero Villalba — Transversal 19", direccion: "Transversal 19 # 2D-218 - Villalba", telefono: "3226628767", telefonoDisplay: "322 662 8767" },
+          { nombre: "Ofero Zona Móvil — Carrera 8", direccion: "Carrera 8 # 17-17 Local 25", telefono: "3015294017", telefonoDisplay: "301 529 4017" }
+        ]
+      },
+      "CÓRDOBA": {
+        "CERETÉ": [
+          { nombre: "Ofero Cereté — Calle 14", direccion: "Calle 14 # 15-32", telefono: "3023589181", telefonoDisplay: "302 358 9181" }
+        ],
+        "CHINÚ": [
+          { nombre: "Ofero Chinú — Carrera 7", direccion: "Carrera 7 Calle 19-26", telefono: "3206624281", telefonoDisplay: "320 662 4281" }
+        ],
+        "CIÉNAGA DE ORO": [
+          { nombre: "Ofero Ciénaga de Oro — Carrera 15", direccion: "Carrera 15 # 7-86 - Calle del Comercio", telefono: "3001948686", telefonoDisplay: "300 194 8686" }
+        ],
+        "LORICA": [
+          { nombre: "Ofero Lorica — Calle 4A", direccion: "Calle 4A # 23A-12", telefono: "3013118311", telefonoDisplay: "301 311 8311" }
+        ],
+        "MONTELÍBANO": [
+          { nombre: "Ofero Montelíbano", direccion: "Próximamente", telefono: "3001948686", telefonoDisplay: "300 194 8686" }
+        ],
+        "MONTERÍA": [
+          { nombre: "Ofero Buenavista — Calle 15", direccion: "Calle 15 # 7-55 Local 1 - Barrio Buenavista", telefono: "3234366340", telefonoDisplay: "323 436 6340" },
+          { nombre: "Ofero CC Nuestro Montería", direccion: "Transversal 29 # 29-69 - CC Nuestro Montería", telefono: "3122054558", telefonoDisplay: "312 205 4558" },
+          { nombre: "Ofero Montería Centro — Carrera 4", direccion: "Carrera 4 # 30-58", telefono: "3024267768", telefonoDisplay: "302 426 7768" },
+          { nombre: "Ofero Montería El Dorado — Carrera 9W", direccion: "Carrera 9W Calle 23-65 - Barrio El Dorado", telefono: "3234353977", telefonoDisplay: "323 435 3977" },
+          { nombre: "Ofero Montería La 41 — Carrera 10A", direccion: "Carrera 10A # 41-10", telefono: "3114235922", telefonoDisplay: "311 423 5922" },
+          { nombre: "Ofero Montería La Granja — Transversal 5", direccion: "Transversal 5 # 12-06", telefono: "3046676575", telefonoDisplay: "304 667 6575" }
+        ],
+        "PLANETA RICA": [
+          { nombre: "Ofero Planeta Rica — Carrera 7", direccion: "Carrera 7 # 10-64 - CC Planeta Plaza Local 13", telefono: "3001948686", telefonoDisplay: "300 194 8686" }
+        ],
+        "SAHAGÚN": [
+          { nombre: "Ofero Sahagún — Calle 18", direccion: "Calle 18 Carrera 1A - Avenida Hospital", telefono: "3159411645", telefonoDisplay: "315 941 1645" }
+        ]
+      },
+      "CUNDINAMARCA": {
+        "BOGOTÁ": [
+          { nombre: "Ofero Álamos — Calle 72", direccion: "Calle 72 # 103-12", telefono: "3135176995", telefonoDisplay: "313 517 6995" },
+          { nombre: "Ofero Avenida Boyacá", direccion: "Avenida Boyacá # 68B-41", telefono: "3214198411", telefonoDisplay: "321 419 8411" },
+          { nombre: "Ofero Avenida Cali Aures", direccion: "Calle 137B # 104-35", telefono: "3205959536", telefonoDisplay: "320 595 9536" },
+          { nombre: "Ofero Avenida Cra 30", direccion: "Avenida Carrera 30 # 41-25 - EDS Texaco", telefono: "3228844750", telefonoDisplay: "322 884 4750" },
+          { nombre: "Ofero Calle 80", direccion: "Avenida Calle 80 # 82A-22", telefono: "3209792639", telefonoDisplay: "320 979 2639" },
+          { nombre: "Ofero Calle 85", direccion: "Carrera 15 # 85-19 Local 1", telefono: "3228888613", telefonoDisplay: "322 888 8613" },
+          { nombre: "Ofero Cedritos — Calle 134", direccion: "Calle 134 # 19-46", telefono: "3236396681", telefonoDisplay: "323 639 6681" },
+          { nombre: "Ofero Centro de Experiencia Kennedy", direccion: "Calle 78 # 39A Sur-82", telefono: "3046663623", telefonoDisplay: "304 666 3623" },
+          { nombre: "Ofero Centro de Experiencia Niza — Av. Suba", direccion: "Avenida Suba # 128A-60", telefono: "3146044862", telefonoDisplay: "314 604 4862" },
+          { nombre: "Ofero Chapinero — Calle 57", direccion: "Calle 57 # 13-42 Local 1", telefono: "3114435753", telefonoDisplay: "311 443 5753" },
+          { nombre: "Ofero Escuela Militar — Calle 80", direccion: "Calle 80 # 56-39", telefono: "3228095995", telefonoDisplay: "322 809 5995" },
+          { nombre: "Ofero Fontibón — Carrera 100", direccion: "Carrera 100 # 20C-07", telefono: "3219133147", telefonoDisplay: "321 913 3147" },
+          { nombre: "Ofero Galerías — Carrera 24", direccion: "Carrera 24 # 51-04 Esquina", telefono: "3102412888", telefonoDisplay: "310 241 2888" },
+          { nombre: "Ofero La 74 — Calle 74", direccion: "Calle 74 # 15-12", telefono: "3146044916", telefonoDisplay: "314 604 4916" },
+          { nombre: "Ofero La Alquería — Autopista Sur", direccion: "Autopista Sur # 52-10", telefono: "3113585986", telefonoDisplay: "311 358 5986" },
+          { nombre: "Ofero La Campiña — Carrera 92", direccion: "Carrera 92 # 147B-11 - Barrio Suba", telefono: "3113585988", telefonoDisplay: "311 358 5988" },
+          { nombre: "Ofero La Estrada Av Rojas", direccion: "Carrera 70 # 64-74 Local 2", telefono: "3113587220", telefonoDisplay: "311 358 7220" },
+          { nombre: "Ofero Las Américas — Av. Las Américas", direccion: "Avenida Las Américas (Calle 6A) # 71A-60", telefono: "3228836931", telefonoDisplay: "322 883 6931" },
+          { nombre: "Ofero Las Ferias — Calle 72", direccion: "Calle 72 # 76-84", telefono: "3113585990", telefonoDisplay: "311 358 5990" },
+          { nombre: "Ofero Lourdes Chapinero — Calle 13", direccion: "Calle 13 # 60 Esquina", telefono: "3113587225", telefonoDisplay: "311 358 7225" },
+          { nombre: "Ofero Niza — Transversal 60", direccion: "Transversal 60 # 127D-06 Local 1", telefono: "3228834722", telefonoDisplay: "322 883 4722" },
+          { nombre: "Ofero Prado Veraniego — Calle 130", direccion: "Calle 130 # 45-35", telefono: "3146044895", telefonoDisplay: "314 604 4895" },
+          { nombre: "Ofero Restrepo — Transversal 18 Sur", direccion: "Transversal 18 Sur # 14A-53", telefono: "3106642901", telefonoDisplay: "310 664 2901" },
+          { nombre: "Ofero Ricaurte — Calle 13", direccion: "Calle 13 # 28-25", telefono: "3228836946", telefonoDisplay: "322 883 6946" },
+          { nombre: "Ofero Suba — Carrera 50", direccion: "Carrera 50 # 91-92", telefono: "3114464212", telefonoDisplay: "311 446 4212" },
+          { nombre: "Ofero Venecia — Carrera 53 Sur", direccion: "Carrera 53 Sur # 49-40", telefono: "3113621424", telefonoDisplay: "311 362 1424" }
+        ],
+        "CAJICÁ": [
+          { nombre: "Ofero Cajicá — Carrera 5", direccion: "Carrera 5 # 3-177 Sur Local 102", telefono: "3001948686", telefonoDisplay: "300 194 8686" }
+        ],
+        "FUSAGASUGÁ": [
+          { nombre: "Ofero Fusagasugá Multimarca — Calle 8", direccion: "Calle 8 Av. Las Palmas # 5-49", telefono: "3138002879", telefonoDisplay: "313 800 2879" }
+        ]
+      },
+      "HUILA": {
+        "NEIVA": [
+          { nombre: "Ofero Neiva Centro — Calle 5", direccion: "Calle 5 # 7-06 Local 1", telefono: "3172141533", telefonoDisplay: "317 214 1533" },
+          { nombre: "Ofero Neiva Cra 6", direccion: "Carrera 6 # 8-10", telefono: "3204075736", telefonoDisplay: "320 407 5736" }
+        ],
+        "PITALITO": [
+          { nombre: "Ofero Pitalito Centro — Carrera 4", direccion: "Carrera 4 # 3-79", telefono: "3223668589", telefonoDisplay: "322 366 8589" },
+          { nombre: "Ofero Pitalito Red Phone — Carrera 4", direccion: "Carrera 4 # 4-03 Esquina", telefono: "3126242387", telefonoDisplay: "312 624 2387" }
+        ]
+      },
+      "LA GUAJIRA": {
+        "FONSECA": [
+          { nombre: "Ofero Fonseca — Diagonal 12", direccion: "Diagonal 12 # 21-64", telefono: "3189422983", telefonoDisplay: "318 942 2983" }
+        ],
+        "MAICAO": [
+          { nombre: "Ofero Maicao — Calle 12", direccion: "Calle 12 # 8-33", telefono: "3126671485", telefonoDisplay: "312 667 1485" }
+        ],
+        "RIOHACHA": [
+          { nombre: "Ofero Riohacha — Carrera 15", direccion: "Carrera 15 # Calle 15-49 Apto 1", telefono: "3235639794", telefonoDisplay: "323 563 9794" }
+        ],
+        "SAN JUAN DEL CESAR": [
+          { nombre: "Ofero San Juan del Cesar — Carrera 6", direccion: "Carrera 6 # 2 Sur-18 Local 2", telefono: "3148589796", telefonoDisplay: "314 858 9796" }
+        ]
+      },
+      "MAGDALENA": {
+        "CIÉNAGA": [
+          { nombre: "Ofero Ciénaga — Carrera 13", direccion: "Carrera 13 # 18-29", telefono: "3233224643", telefonoDisplay: "323 322 4643" }
+        ],
+        "EL BANCO": [
+          { nombre: "Ofero El Banco — Calle 8", direccion: "Calle 8 Carrera 2-89 Apto 3", telefono: "3219573558", telefonoDisplay: "321 957 3558" }
+        ],
+        "FUNDACIÓN": [
+          { nombre: "Ofero Fundación — Carrera 8", direccion: "Carrera 8 # 9-82", telefono: "3019767616", telefonoDisplay: "301 976 7616" }
+        ],
+        "PIVIJAY": [
+          { nombre: "Ofero Pivijay — Calle 17", direccion: "Calle 17 Carrera 12-02 - Barrio La Bonga", telefono: "3004672046", telefonoDisplay: "300 467 2046" }
+        ],
+        "PLATO": [
+          { nombre: "Ofero Plato — Calle 12", direccion: "Calle 12 Carrera 16-4 - Barrio El Carmen", telefono: "3107025563", telefonoDisplay: "310 702 5563" }
+        ],
+        "SALAMINA": [
+          { nombre: "Ofero Salamina — Calle 5", direccion: "Calle 5 # 6-52 - Barrio Arriba", telefono: "3004672046", telefonoDisplay: "300 467 2046" }
+        ],
+        "SANTA MARTA": [
+          { nombre: "Ofero 11 de Noviembre — Calle 30", direccion: "Calle 30 # 74-41", telefono: "3013673299", telefonoDisplay: "301 367 3299" },
+          { nombre: "Ofero Éxito Buenavista", direccion: "Calle 32 # 29A-500 - Éxito Buenavista", telefono: "3113487505", telefonoDisplay: "311 348 7505" },
+          { nombre: "Ofero Éxito Centro", direccion: "Éxito Centro Santa Marta", telefono: "3002749339", telefonoDisplay: "300 274 9339" },
+          { nombre: "Ofero Ferrocarril — Carrera 8C", direccion: "Carrera 8C # 15-03 - Barrio El Pradito", telefono: "3234361281", telefonoDisplay: "323 436 1281" },
+          { nombre: "Ofero La Bomba / Las Palmitas — Calle 24", direccion: "Calle 24 # 11-44 - Barrio Bolívar", telefono: "3117010345", telefonoDisplay: "311 701 0345" },
+          { nombre: "Ofero Rodadero — Calle 12A", direccion: "Calle 12A # 17A-7", telefono: "3012262625", telefonoDisplay: "301 226 2625" }
+        ]
+      },
+      "META": {
+        "VILLAVICENCIO": [
+          { nombre: "Ofero Villavicencio Catama — Calle 35", direccion: "Calle 35 # 20D-06 - Avenida Catama", telefono: "3103368966", telefonoDisplay: "310 336 8966" },
+          { nombre: "Ofero Villavicencio Centro — Calle 53", direccion: "Calle 53 # 20D-07", telefono: "3103368966", telefonoDisplay: "310 336 8966" },
+          { nombre: "Ofero Villavicencio La 40 — Avenida 40", direccion: "Avenida 40 # 26C-37", telefono: "3046810874", telefonoDisplay: "304 681 0874" }
+        ]
+      },
+      "NORTE DE SANTANDER": {
+        "CÚCUTA": [
+          { nombre: "Ofero Cúcuta Diagonal", direccion: "Diagonal Santander # 8-16", telefono: "3001948686", telefonoDisplay: "300 194 8686" },
+          { nombre: "Ofero Cúcuta Principal — Diagonal Santander", direccion: "Diagonal Santander # 8-28", telefono: "3132715503", telefonoDisplay: "313 271 5503" },
+          { nombre: "Ofero Gran Colombia — Av. Gran Colombia", direccion: "Av. Gran Colombia 5E", telefono: "3134352889", telefonoDisplay: "313 435 2889" },
+          { nombre: "Ofero Kesla Cúcuta Diagonal", direccion: "Diagonal Santander # 8-16 - Fuente Luminosa", telefono: "3132715503", telefonoDisplay: "313 271 5503" },
+          { nombre: "Ofero Kesla Malecón — Avenida 9E", direccion: "Avenida 9E # 11-131 - Malecón", telefono: "3118269681", telefonoDisplay: "311 826 9681" }
+        ],
+        "OCAÑA": [
+          { nombre: "Ofero Ocaña — Calle 7", direccion: "Calle 7 # 29-74 - Av. Francisco Fernández de Contreras", telefono: "3170254890", telefonoDisplay: "317 025 4890" }
+        ],
+        "PAMPLONA": [
+          { nombre: "Ofero Pamplona — Carrera 5", direccion: "Carrera 5 # 8B-24 Local A - Edificio García Álvarez", telefono: "3125310926", telefonoDisplay: "312 531 0926" }
+        ]
+      },
+      "QUINDÍO": {
+        "ARMENIA": [
+          { nombre: "Ofero Armenia — Carrera 19", direccion: "Carrera 19 # 12-26", telefono: "3019721050", telefonoDisplay: "301 972 1050" },
+          { nombre: "Ofero Electrimotors Armenia — Carrera 18", direccion: "Carrera 18 # 21-10 Local 2", telefono: "3116515100", telefonoDisplay: "311 651 5100" }
+        ]
+      },
+      "RISARALDA": {
+        "PEREIRA": [
+          { nombre: "Ofero Dosquebradas — Carrera 16", direccion: "Dosquebradas Carrera 16 # 37-28", telefono: "3128700256", telefonoDisplay: "312 870 0256" },
+          { nombre: "Ofero Pereira — Av. 30 de Agosto", direccion: "Av. 30 de Agosto # 36-47", telefono: "3103559985", telefonoDisplay: "310 355 9985" }
+        ]
+      },
+      "SAN ANDRÉS": {
+        "SAN ANDRÉS": [
+          { nombre: "Ofero San Andrés — Av. Las Américas", direccion: "Av. Las Américas # 3-165 - San Andrés Isla", telefono: "3003412506", telefonoDisplay: "300 341 2506" }
+        ]
+      },
+      "SANTANDER": {
+        "BARRANCABERMEJA": [
+          { nombre: "Ofero Barrancabermeja — Calle 50", direccion: "Calle 50 # 13-02", telefono: "3122355687", telefonoDisplay: "312 235 5687" }
+        ],
+        "BUCARAMANGA": [
+          { nombre: "Ofero Cabecera — Calle 51", direccion: "Calle 51 # 33-24", telefono: "3159607627", telefonoDisplay: "315 960 7627" },
+          { nombre: "Ofero Centro — Carrera 15", direccion: "Carrera 15 # 37-27 - Centro", telefono: "3181227935", telefonoDisplay: "318 122 7935" },
+          { nombre: "Ofero Floridablanca — Carrera 8", direccion: "Carrera 8 # 5-60 - Parque Principal", telefono: "3002736849", telefonoDisplay: "300 273 6849" },
+          { nombre: "Ofero Girón — Av. Cañayes", direccion: "Av. Cañayes Calle 25 # 21B-114", telefono: "3209272641", telefonoDisplay: "320 927 2641" },
+          { nombre: "Ofero La 21 — Carrera 21", direccion: "Carrera 21 # 37-16", telefono: "3219409049", telefonoDisplay: "321 940 9049" },
+          { nombre: "Ofero La 27 — Calle 55A", direccion: "Calle 55A # 27-04", telefono: "3209272626", telefonoDisplay: "320 927 2626" },
+          { nombre: "Ofero La Isla — Carrera 18", direccion: "Carrera 18 # 54-60", telefono: "3209267267", telefonoDisplay: "320 926 7267" },
+          { nombre: "Ofero Parque de los Niños — Carrera 27", direccion: "Carrera 27 # 34-66", telefono: "3014377928", telefonoDisplay: "301 437 7928" },
+          { nombre: "Ofero Pedregosa — Carrera 33", direccion: "Carrera 33 # 94-23", telefono: "3045809629", telefonoDisplay: "304 580 9629" },
+          { nombre: "Ofero Provenza — Carrera 27", direccion: "Carrera 27 # 104-11 Local 2 y 3", telefono: "3184849993", telefonoDisplay: "318 484 9993" },
+          { nombre: "Ofero Sotomayor — Carrera 33", direccion: "Carrera 33 # 58-16", telefono: "3202465871", telefonoDisplay: "320 246 5871" }
+        ],
+        "SAN GIL": [
+          { nombre: "Ofero San Gil — Carrera 10", direccion: "Carrera 10 # 9-67 - Centro", telefono: "3507853621", telefonoDisplay: "350 785 3621" }
+        ]
+      },
+      "SUCRE": {
+        "COROZAL": [
+          { nombre: "Ofero Corozal — Carrera 26", direccion: "Carrera 26 # 32-15", telefono: "3242670796", telefonoDisplay: "324 267 0796" }
+        ],
+        "COVEÑAS": [
+          { nombre: "Ofero Coveñas — Calle 9C", direccion: "Calle 9C # 24-22", telefono: "3246803632", telefonoDisplay: "324 680 3632" }
+        ],
+        "MAJAGUAL": [
+          { nombre: "Ofero Majagual — Calle 5", direccion: "Calle 5 # 19-21 - Centro", telefono: "3104788770", telefonoDisplay: "310 478 8770" }
+        ],
+        "SINCELEJO": [
+          { nombre: "Ofero Alfonso López — Carrera 19", direccion: "Carrera 19 # 28A-32", telefono: "3005007262", telefonoDisplay: "300 500 7262" },
+          { nombre: "Ofero Av. Luis Carlos Galán", direccion: "Calle 28 # 22B-90", telefono: "3188205626", telefonoDisplay: "318 820 5626" },
+          { nombre: "Ofero Sincelejo Las Peñitas — Carrera 25", direccion: "Carrera 25 # 21-60 - Av. Las Peñitas", telefono: "3004361782", telefonoDisplay: "300 436 1782" }
+        ]
+      },
+      "TOLIMA": {
+        "IBAGUÉ": [
+          { nombre: "Ofero Ibagué — Carrera 5", direccion: "Carrera 5 # 19-141 - Local Esquina", telefono: "3228940555", telefonoDisplay: "322 894 0555" }
+        ]
+      },
+      "VALLE DEL CAUCA": {
+        "BUENAVENTURA": [
+          { nombre: "Ofero Buenaventura — Carrera 6", direccion: "Carrera 6 # 2-36 Local 102", telefono: "3107078548", telefonoDisplay: "310 707 8548" }
+        ],
+        "BUGA": [
+          { nombre: "Ofero Buga — Carrera 9", direccion: "Carrera 9 # 14-01 Esquina", telefono: "3024296633", telefonoDisplay: "302 429 6633" }
+        ],
+        "CALI": [
+          { nombre: "Ofero Cali Carrera 23", direccion: "Calle 15 # 23-07 - Aranjuez", telefono: "3145811079", telefonoDisplay: "314 581 1079" },
+          { nombre: "Ofero Cali Centro — Carrera 5", direccion: "Carrera 5 # 15-49", telefono: "3151812511", telefonoDisplay: "315 181 2511" },
+          { nombre: "Ofero Cali Cra 15", direccion: "Carrera 15 # 10-49", telefono: "3169380086", telefonoDisplay: "316 938 0086" },
+          { nombre: "Ofero Cali Norte — Av. 3 Norte", direccion: "Avenida 3 Norte # 47N-48 Local 27", telefono: "3126809691", telefonoDisplay: "312 680 9691" },
+          { nombre: "Ofero Cali Roosevelt — Av. Roosevelt", direccion: "Av. Roosevelt # 25-70", telefono: "3216433681", telefonoDisplay: "321 643 3681" },
+          { nombre: "Ofero Calima — Carrera 5N", direccion: "Carrera 5N # 68N-36 - Calima", telefono: "3126809692", telefonoDisplay: "312 680 9692" },
+          { nombre: "Ofero Cañaveralejo — Carrera 57", direccion: "Carrera 57 # 40-49 - Edificio Atalanta", telefono: "3128812938", telefonoDisplay: "312 881 2938" },
+          { nombre: "Ofero Centro Cra 8 — Carrera 8", direccion: "Carrera 8 # 22A Local 16 - Barrio Obrero", telefono: "3108657160", telefonoDisplay: "310 865 7160" },
+          { nombre: "Ofero La 14 Cali — Calle 14", direccion: "Calle 14 # 4-19", telefono: "3046063509", telefonoDisplay: "304 606 3509" },
+          { nombre: "Ofero La 66 Cali — Calle 13", direccion: "Calle 13 # 65C-42 Local 2", telefono: "3043958526", telefonoDisplay: "304 395 8526" },
+          { nombre: "Ofero Marroquín — Carrera 26", direccion: "Carrera 26 M1 # 83-10 - Marroquín 2", telefono: "3505344053", telefonoDisplay: "350 534 4053" },
+          { nombre: "Ofero Valle Grande — Carrera 23", direccion: "Carrera 23 # 89-19 - Valle Grande Local 8", telefono: "3244472336", telefonoDisplay: "324 447 2336" }
+        ],
+        "CARTAGO": [
+          { nombre: "Ofero Cartago — Calle 10", direccion: "Calle 10 # 9-83", telefono: "3116805612", telefonoDisplay: "311 680 5612" }
+        ],
+        "JAMUNDÍ": [
+          { nombre: "Ofero Jamundí — Calle 10", direccion: "Calle 10 # 10-63 Local 5 - Edificio Ligia", telefono: "3043958549", telefonoDisplay: "304 395 8549" }
+        ],
+        "PALMIRA": [
+          { nombre: "Ofero Palmira — Carrera 33A", direccion: "Carrera 33A # 30-61", telefono: "3207716424", telefonoDisplay: "320 771 6424" }
+        ],
+        "TULUÁ": [
+          { nombre: "Ofero Tuluá — Calle 27", direccion: "Calle 27 # 20-29 - Barrio Centro", telefono: "3128120244", telefonoDisplay: "312 812 0244" }
+        ]
+      }
+    };
+
+    // ── Helper: clear select and set placeholder ──
+    function resetSelect(sel, placeholder) {
+      while (sel.options.length > 0) {
+        sel.remove(0);
+      }
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = placeholder;
+      sel.appendChild(opt);
+    }
+
+    // ── Helper: add option to select ──
+    function addOption(sel, value, text) {
+      const opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = text;
+      sel.appendChild(opt);
+    }
+
+    // ── DOM Elements ──
+    const selDepto = document.getElementById('departamento');
+    const selCiudad = document.getElementById('ciudad');
+    const selTienda = document.getElementById('tienda');
+    const cardContainer = document.getElementById('cardContainer');
+    const cardName = document.getElementById('cardName');
+    const cardLocation = document.getElementById('cardLocation');
+    const cardAddress = document.getElementById('cardAddress');
+    const cardPhone = document.getElementById('cardPhone');
+    const cardDirections = document.getElementById('cardDirections');
+
+    // ── Populate Departamentos ──
+    Object.keys(tiendas).sort().forEach(function(depto) {
+      addOption(selDepto, depto, depto);
+    });
+
+    // ── Event: Departamento ──
+    selDepto.addEventListener('change', function() {
+      resetSelect(selCiudad, 'Selecciona una ciudad');
+      resetSelect(selTienda, 'Selecciona una tienda');
+      selTienda.disabled = true;
+      cardContainer.classList.remove('visible');
+
+      var depto = selDepto.value;
+      if (!depto) {
+        selCiudad.disabled = true;
+        return;
+      }
+
+      selCiudad.disabled = false;
+      Object.keys(tiendas[depto]).sort().forEach(function(ciudad) {
+        addOption(selCiudad, ciudad, ciudad);
+      });
+    });
+
+    // ── Event: Ciudad ──
+    selCiudad.addEventListener('change', function() {
+      resetSelect(selTienda, 'Selecciona una tienda');
+      cardContainer.classList.remove('visible');
+
+      var depto = selDepto.value;
+      var ciudad = selCiudad.value;
+      if (!ciudad) {
+        selTienda.disabled = true;
+        return;
+      }
+
+      selTienda.disabled = false;
+      tiendas[depto][ciudad].forEach(function(t, i) {
+        addOption(selTienda, i, t.nombre);
+      });
+    });
+
+    // ── Event: Tienda ──
+    selTienda.addEventListener('change', function() {
+      var depto = selDepto.value;
+      var ciudad = selCiudad.value;
+      var idx = selTienda.value;
+
+      if (idx === '') {
+        cardContainer.classList.remove('visible');
+        return;
+      }
+
+      var t = tiendas[depto][ciudad][idx];
+      cardName.textContent = t.nombre;
+      cardLocation.textContent = ciudad + ' \u00b7 ' + depto;
+      cardAddress.textContent = t.direccion;
+      cardPhone.textContent = t.telefonoDisplay;
+      cardPhone.href = 'tel:+57' + t.telefono;
+
+      var query = encodeURIComponent(t.direccion + ', ' + ciudad + ', Colombia');
+      cardDirections.href = 'https://www.google.com/maps/search/?api=1&query=' + query;
+
+      cardContainer.classList.remove('visible');
+      // Force reflow for animation restart
+      void cardContainer.offsetWidth;
+      cardContainer.classList.add('visible');
+    });
+  </script>
+</body>
+</html>
