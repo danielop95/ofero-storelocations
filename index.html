@@ -41,7 +41,7 @@
     }
 
     .green-section {
-      background-color: var(--ofero-green);
+      background-color: #F8F9FA;
       position: relative;
       overflow: hidden;
       flex: 1;
@@ -55,10 +55,10 @@
       right: -5%;
       width: 320px;
       height: 320px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53.57 53.57'%3E%3Cg%3E%3Cpath fill='%234aa32f' d='M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53'/%3E%3Cpath fill='%234aa32f' d='M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46'/%3E%3Cpath fill='%234aa32f' d='M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53.57 53.57'%3E%3Cg%3E%3Cpath fill='%2370D84A' d='M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53'/%3E%3Cpath fill='%2370D84A' d='M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46'/%3E%3Cpath fill='%2370D84A' d='M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z'/%3E%3C/g%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-size: contain;
-      opacity: 0.2;
+      opacity: 0.12;
       pointer-events: none;
       z-index: 0;
     }
@@ -70,7 +70,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      background-color: var(--ofero-black);
+      background-color: var(--ofero-green);
     }
 
     .header-logo {
@@ -90,7 +90,7 @@
     .hero h1 {
       font-size: 1.6rem;
       font-weight: 800;
-      color: var(--ofero-white);
+      color: var(--ofero-black);
       margin-bottom: 10px;
       line-height: 1.35;
     }
@@ -108,7 +108,7 @@
     .hero p {
       font-size: 0.9rem;
       font-weight: 600;
-      color: rgba(255, 255, 255, 0.75);
+      color: var(--ofero-gray-dark);
       line-height: 1.5;
     }
 
@@ -136,7 +136,7 @@
       display: block;
       font-size: 0.75rem;
       font-weight: 800;
-      color: var(--ofero-white);
+      color: var(--ofero-black);
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 6px;
@@ -150,7 +150,7 @@
       font-weight: 600;
       color: var(--ofero-black);
       background-color: var(--ofero-white);
-      border: 2px solid rgba(29, 30, 33, 0.08);
+      border: 2px solid var(--ofero-green);
       border-radius: 12px;
       outline: none;
       appearance: none;
@@ -307,17 +307,80 @@
 
     /* ── FOOTER ── */
     .footer {
-      padding: 20px;
+      padding: 40px 20px 0;
       text-align: center;
-      background-color: var(--ofero-black);
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.6);
+      background-color: var(--ofero-white);
+      font-size: 0.9rem;
+      color: #adb5bd;
     }
 
-    .footer a {
-      color: var(--ofero-green);
+    .footer-logo {
+      height: 40px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer-tagline {
+      font-size: 1.1rem;
+      color: #adb5bd;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .footer-social a {
+      color: #c0c5ca;
       text-decoration: none;
-      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .footer-social a:hover {
+      color: var(--ofero-green);
+    }
+
+    .footer-social svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    .footer-divider {
+      border: none;
+      border-top: 1px solid #e9ecef;
+      margin: 0 0 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 16px 0 24px;
+    }
+
+    .footer-links a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #adb5bd;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--ofero-green);
+    }
+
+    .footer-links svg {
+      width: 18px;
+      height: 18px;
     }
 
     /* ── ANIMATIONS ── */
@@ -354,7 +417,7 @@
 
   <div class="green-section">
     <section class="hero">
-      <h1>¡Encuentra tu sede <svg class="ofero-f" viewBox="0 0 53.57 53.57" xmlns="http://www.w3.org/2000/svg"><path fill="#1D1E21" d="M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53"/><path fill="#1D1E21" d="M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46"/><path fill="#1D1E21" d="M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z"/></svg> más cercana!</h1>
+      <h1>¡Encuentra tu sede <svg class="ofero-f" viewBox="0 0 53.57 53.57" xmlns="http://www.w3.org/2000/svg"><path fill="#70D84A" d="M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53"/><path fill="#70D84A" d="M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46"/><path fill="#70D84A" d="M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z"/></svg> más cercana!</h1>
       <p>Selecciona tu departamento, ciudad y sede para ver la información de contacto.</p>
     </section>
 
@@ -412,7 +475,41 @@
   </div>
 
   <footer class="footer">
-    ¿Necesitas ayuda?<br>Escríbenos por <a href="https://wa.me/573001948686" target="_blank" rel="noopener">WhatsApp</a>
+    <img src="Logo.svg" alt="Ofero" class="footer-logo">
+    <p class="footer-tagline">¡Bienvenido a la nueva revolución de movilidad eléctrica<br>en Colombia! ⚡</p>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=61557904795382" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@oferocolombia" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.77 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/oferocolombia/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-links">
+      <a href="https://oferocol.com/servicios/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        Servicio Técnico
+      </a>
+      <a href="https://oferocol.com/contacto/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Contacto
+      </a>
+      <a href="https://drive.google.com/uc?export=download&id=1ucg56W8B91vzU48egMVsrGBjQeTiB47j" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Política de datos
+      </a>
+      <a href="https://oferocol.com/pqrs/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        PQRS
+      </a>
+    </div>
   </footer>
 
   <script>
