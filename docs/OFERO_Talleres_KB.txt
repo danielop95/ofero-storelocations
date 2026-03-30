@@ -1,0 +1,430 @@
+DIRECTORIO DE TALLERES AUTORIZADOS OFERO — COLOMBIA
+============================================================
+
+DEPARTAMENTOS CON TALLER OFERO:
+Antioquia, Atlántico, Bolívar, Cesar, Córdoba, Cundinamarca, La Guajira, Magdalena, Meta, Norte de Santander, Santander, Sucre, Valle del Cauca
+
+============================================================
+
+DEPARTAMENTO: ANTIOQUIA
+------------------------------------------------------------
+
+CIUDAD: MEDELLÍN | TALLERES: 1
+
+Taller 1 en Medellín:
+  Nombre: Sede Alpujarra
+  Dirección: CALLE 44 # 51 - 33 sede alpujarra
+  Teléfono: 3004200527
+
+--- FIN TALLERES MEDELLÍN ---
+
+============================================================
+
+DEPARTAMENTO: ATLÁNTICO
+------------------------------------------------------------
+
+CIUDAD: BARANOA | TALLERES: 1
+
+Taller 1 en Baranoa:
+  Nombre: Baranoa Barrio Caldas
+  Dirección: carrera 19 celle 13c barrio Caldas
+  Teléfono: 3243620132
+
+--- FIN TALLERES BARANOA ---
+
+CIUDAD: BARRANQUILLA | TALLERES: 2
+
+Taller 1 en Barranquilla:
+  Nombre: Barranquilla Cra 21B
+  Dirección: Cra 21B #63C-65
+  Teléfono: 311 4187598
+
+Taller 2 en Barranquilla:
+  Nombre: Barranquilla Sede Boston
+  Dirección: Cra 47 #59-39 (Sede Boston)
+  Teléfono: 323 4361287
+
+--- FIN TALLERES BARRANQUILLA ---
+
+CIUDAD: GALAPA | TALLERES: 1
+
+Taller 1 en Galapa:
+  Nombre: Galapa Calle 10
+  Dirección: CALLE 10 # 22 - 63
+  Teléfono: 3234361287
+
+--- FIN TALLERES GALAPA ---
+
+CIUDAD: MALAMBO | TALLERES: 1
+
+Taller 1 en Malambo:
+  Nombre: Malambo Calle 10
+  Dirección: Calle 10#17-76 Malambo
+  Teléfono: 302 2058229
+
+--- FIN TALLERES MALAMBO ---
+
+CIUDAD: PUERTO COLOMBIA | TALLERES: 1
+
+Taller 1 en Puerto Colombia:
+  Nombre: Puerto Colombia Calle 2
+  Dirección: CALLE 2 # 7-35
+  Teléfono: 3234361287
+
+--- FIN TALLERES PUERTO COLOMBIA ---
+
+CIUDAD: SABANALARGA | TALLERES: 1
+
+Taller 1 en Sabanalarga:
+  Nombre: Sabanalarga Sede La Cordialidad
+  Dirección: Cra 23 #27-110 la cordialidad
+  Teléfono: 3234361287
+
+--- FIN TALLERES SABANALARGA ---
+
+CIUDAD: SANTO TOMÁS | TALLERES: 1
+
+Taller 1 en Santo Tomás:
+  Nombre: Santo Tomas Cra 11
+  Dirección: Cra 11 # 9 - 21 local 2 Santo Tomás
+  Teléfono: 3104774788
+
+--- FIN TALLERES SANTO TOMÁS ---
+
+CIUDAD: SOLEDAD | TALLERES: 1
+
+Taller 1 en Soledad:
+  Nombre: Soledad Calle 18
+  Dirección: calle 18# 28a-29 soledad
+  Teléfono: 301 2870707
+
+--- FIN TALLERES SOLEDAD ---
+
+============================================================
+
+DEPARTAMENTO: BOLÍVAR
+------------------------------------------------------------
+
+CIUDAD: CARTAGENA | TALLERES: 2
+
+Taller 1 en Cartagena:
+  Nombre: Cartagena Calle 32
+  Dirección: Cl. 32 #No. 21 - 251  Pie de la popa
+  Teléfono: 3017074027
+
+Taller 2 en Cartagena:
+  Nombre: Cartagena Sede Basurto
+  Dirección: Calle 30# 32a-02  Basurto)
+  Teléfono: 3017074027
+
+--- FIN TALLERES CARTAGENA ---
+
+CIUDAD: MAGANGUÉ | TALLERES: 1
+
+Taller 1 en Magangué:
+  Nombre: Magangue Barrio Pueblo Nuevo
+  Dirección: Barrio Pueblo Nuevo Calle 16# 11-12
+  Teléfono: 3125266071
+
+--- FIN TALLERES MAGANGUÉ ---
+
+============================================================
+
+DEPARTAMENTO: CESAR
+------------------------------------------------------------
+
+CIUDAD: AGUACHICA | TALLERES: 1
+
+Taller 1 en Aguachica:
+  Nombre: Aguachica Calle 5
+  Dirección: calle 5 # 18-63
+  Teléfono: 312 2052518
+
+--- FIN TALLERES AGUACHICA ---
+
+CIUDAD: BECERRIL | TALLERES: 1
+
+Taller 1 en Becerril:
+  Nombre: Becerril Kr 5
+  Dirección: Kr 5#11-14
+  Teléfono: No disponible
+
+--- FIN TALLERES BECERRIL ---
+
+CIUDAD: BOSCONIA | TALLERES: 1
+
+Taller 1 en Bosconia:
+  Nombre: Bosconia Calle 18
+  Dirección: Calle 18 # 17A-55
+  Teléfono: 322 6707547
+
+--- FIN TALLERES BOSCONIA ---
+
+CIUDAD: CODAZZI | TALLERES: 1
+
+Taller 1 en Codazzi:
+  Nombre: Codazzi Cra 16
+  Dirección: Cra 16 #18-44, Local 1
+  Teléfono: 322 6605797
+
+--- FIN TALLERES CODAZZI ---
+
+CIUDAD: CURUMANÍ | TALLERES: 1
+
+Taller 1 en Curumaní:
+  Nombre: Carumani Cra 17
+  Dirección: Carrera 17 #05, frente a Brasilia
+  Teléfono: 312 2060167
+
+--- FIN TALLERES CURUMANÍ ---
+
+CIUDAD: LA JAGUA | TALLERES: 1
+
+Taller 1 en La Jagua:
+  Nombre: La Jagua Calle 5
+  Dirección: calle 5 # 18-63
+  Teléfono: 312 2067820
+
+--- FIN TALLERES LA JAGUA ---
+
+CIUDAD: VALLEDUPAR | TALLERES: 3
+
+Taller 1 en Valledupar:
+  Nombre: Valledupar Calle 17
+  Dirección: Calle 17 #12-61 Centro
+  Teléfono: 3184364594
+
+Taller 2 en Valledupar:
+  Nombre: Valledupar Los Manguitos
+  Dirección: Diagonal 21 #19-10 ( Los Manguitos)
+  Teléfono: 3145513128
+
+Taller 3 en Valledupar:
+  Nombre: Valledupar Tres Postes
+  Dirección: Calle 6C, Carrera 16 #105 Tres postes
+  Teléfono: 301 9106300
+
+--- FIN TALLERES VALLEDUPAR ---
+
+============================================================
+
+DEPARTAMENTO: CÓRDOBA
+------------------------------------------------------------
+
+CIUDAD: LORICA | TALLERES: 1
+
+Taller 1 en Lorica:
+  Nombre: Santa Cruz Calle 4A
+  Dirección: Calle 4A #23a - 12
+  Teléfono: 3013118311
+
+--- FIN TALLERES LORICA ---
+
+CIUDAD: MONTERÍA | TALLERES: 1
+
+Taller 1 en Montería:
+  Nombre: Monteria Sede El Dorado
+  Dirección: Cra 9W #23-65 (Sede El Dorado)
+  Teléfono: 3234361307
+
+--- FIN TALLERES MONTERÍA ---
+
+CIUDAD: SAHAGÚN | TALLERES: 1
+
+Taller 1 en Sahagún:
+  Nombre: Sahagun Calle 18
+  Dirección: Calle 18 Cr 1a Avenida Hospital
+  Teléfono: 3159411645
+
+--- FIN TALLERES SAHAGÚN ---
+
+============================================================
+
+DEPARTAMENTO: CUNDINAMARCA
+------------------------------------------------------------
+
+CIUDAD: BOGOTÁ | TALLERES: 3
+
+Taller 1 en Bogotá:
+  Nombre: Bogota Avenida Boyaca
+  Dirección: Avenida Boyaca 68 B 41
+  Teléfono: 3214198411
+
+Taller 2 en Bogotá:
+  Nombre: Bogota Calle 28
+  Dirección: Avenida calle 28 #17-60
+  Teléfono: No disponible
+
+Taller 3 en Bogotá:
+  Nombre: Bogota Cra 30
+  Dirección: Avenida. cra. 30 # 41 -25 EDS Texaco/vanti
+  Teléfono: No disponible
+
+--- FIN TALLERES BOGOTÁ ---
+
+============================================================
+
+DEPARTAMENTO: LA GUAJIRA
+------------------------------------------------------------
+
+CIUDAD: RIOHACHA | TALLERES: 1
+
+Taller 1 en Riohacha:
+  Nombre: Rioacha Cra 15
+  Dirección: Carrera 15#15-49
+  Teléfono: 310 2201776
+
+--- FIN TALLERES RIOHACHA ---
+
+============================================================
+
+DEPARTAMENTO: MAGDALENA
+------------------------------------------------------------
+
+CIUDAD: CIÉNAGA | TALLERES: 1
+
+Taller 1 en Ciénaga:
+  Nombre: Cienaga Cra 13
+  Dirección: CRA 13 # 18-29
+  Teléfono: 323 3224643
+
+--- FIN TALLERES CIÉNAGA ---
+
+CIUDAD: FUNDACIÓN | TALLERES: 1
+
+Taller 1 en Fundación:
+  Nombre: Fundacion Cra 8
+  Dirección: Carrera 8 #9-82
+  Teléfono: 301 9767616
+
+--- FIN TALLERES FUNDACIÓN ---
+
+CIUDAD: PIVIJAY | TALLERES: 1
+
+Taller 1 en Pivijay:
+  Nombre: Pivijay Barrio la Bonga
+  Dirección: Cl 17 Cr 12 02 Barrio la Bonga
+  Teléfono: 3004672046
+
+--- FIN TALLERES PIVIJAY ---
+
+CIUDAD: SANTA MARTA | TALLERES: 1
+
+Taller 1 en Santa Marta:
+  Nombre: Santa Marta Av. Del Ferrocarril
+  Dirección: Av. Del Ferrocarril #15-03 ( Ferrocarril)
+  Teléfono: 3024820047
+
+--- FIN TALLERES SANTA MARTA ---
+
+============================================================
+
+DEPARTAMENTO: META
+------------------------------------------------------------
+
+CIUDAD: VILLAVICENCIO | TALLERES: 1
+
+Taller 1 en Villavicencio:
+  Nombre: Villavicencio Av. 40
+  Dirección: Avenida 40 # 26c 37 Villavicencio
+  Teléfono: 3046810874
+
+--- FIN TALLERES VILLAVICENCIO ---
+
+============================================================
+
+DEPARTAMENTO: NORTE DE SANTANDER
+------------------------------------------------------------
+
+CIUDAD: CÚCUTA | TALLERES: 1
+
+Taller 1 en Cúcuta:
+  Nombre: Cucuta Av. Gran Colombia
+  Dirección: Avenida gran Colombia 5e # 39
+  Teléfono: 311 2907630
+
+--- FIN TALLERES CÚCUTA ---
+
+============================================================
+
+DEPARTAMENTO: SANTANDER
+------------------------------------------------------------
+
+CIUDAD: BUCARAMANGA | TALLERES: 1
+
+Taller 1 en Bucaramanga:
+  Nombre: Bucaramanga Cra 33
+  Dirección: Cra 33 58 16
+  Teléfono: 320 2465871
+
+--- FIN TALLERES BUCARAMANGA ---
+
+============================================================
+
+DEPARTAMENTO: SUCRE
+------------------------------------------------------------
+
+CIUDAD: COROZAL | TALLERES: 1
+
+Taller 1 en Corozal:
+  Nombre: Corozal Cra 26
+  Dirección: CRA 26 32 – 21
+  Teléfono: 3242670796
+
+--- FIN TALLERES COROZAL ---
+
+CIUDAD: COVEÑAS | TALLERES: 1
+
+Taller 1 en Coveñas:
+  Nombre: Coveňas Calle 3
+  Dirección: CALLE 3ª 3 – 9
+  Teléfono: 3017922175
+
+--- FIN TALLERES COVEÑAS ---
+
+CIUDAD: SINCELEJO | TALLERES: 3
+
+Taller 1 en Sincelejo:
+  Nombre: Sincelejo Calle 28
+  Dirección: CALLE 28 # 21  - 39 AV LUIS CARLOS GALAN
+  Teléfono: 3022595365
+
+Taller 2 en Sincelejo:
+  Nombre: Sincelejo Galan
+  Dirección: CALLE 20 # 22b 90  (Galan)
+  Teléfono: 3102202900
+
+Taller 3 en Sincelejo:
+  Nombre: Sincelejo Las Peňitas
+  Dirección: Cra 25 # 21 60  (las peñitas)
+  Teléfono: 3102200740
+
+--- FIN TALLERES SINCELEJO ---
+
+============================================================
+
+DEPARTAMENTO: VALLE DEL CAUCA
+------------------------------------------------------------
+
+CIUDAD: BUGA | TALLERES: 1
+
+Taller 1 en Buga:
+  Nombre: Buga Cra 9
+  Dirección: Carrera 9 #14-01
+  Teléfono: 3024296633
+
+--- FIN TALLERES BUGA ---
+
+CIUDAD: CALI | TALLERES: 2
+
+Taller 1 en Cali:
+  Nombre: Cali Cra 5
+  Dirección: Cra 5 #15-49 (sede Centro)
+  Teléfono: 315 1812511
+
+Taller 2 en Cali:
+  Nombre: Cali La Merced
+  Dirección: Av 3 norte 47n-48 (la Merced)
+  Teléfono: 3126809691
+
+--- FIN TALLERES CALI ---

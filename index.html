@@ -122,7 +122,54 @@
       z-index: 1;
     }
 
+    /* ── TABS ── */
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px 16px;
+      position: relative;
+      z-index: 1;
+    }
 
+    .tab-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 16px;
+      font-family: var(--font);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--ofero-gray-dark);
+      background-color: var(--ofero-white);
+      border: 2px solid var(--ofero-gray-light);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--ofero-green);
+      color: var(--ofero-black);
+    }
+
+    .tab-btn.active {
+      background-color: var(--ofero-green);
+      border-color: var(--ofero-green);
+      color: var(--ofero-white);
+      box-shadow: 0 4px 16px rgba(112, 216, 74, 0.3);
+    }
+
+    .tab-btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
 
     /* ── FILTROS ── */
     .filters {
@@ -409,6 +456,9 @@
       .main {
         padding: 0 20px 48px;
       }
+      .tab-bar {
+        padding: 0 20px 24px;
+      }
     }
   </style>
 </head>
@@ -420,30 +470,23 @@
 
   <div class="green-section">
     <section class="hero">
-      <h1>¡Encuentra tu sede <svg class="ofero-f" viewBox="0 0 53.57 53.57" xmlns="http://www.w3.org/2000/svg"><path fill="#70D84A" d="M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53"/><path fill="#70D84A" d="M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46"/><path fill="#70D84A" d="M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z"/></svg> más cercana!</h1>
-      <p>Selecciona tu departamento, ciudad y sede para ver la información de contacto.</p>
+      <h1 id="heroTitle"></h1>
+      <p id="heroSubtitle"></p>
     </section>
 
+    <nav class="tab-bar" role="tablist">
+      <button class="tab-btn" role="tab" data-tab="tiendas" id="tab-tiendas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Tiendas
+      </button>
+      <button class="tab-btn" role="tab" data-tab="talleres" id="tab-talleres">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        Talleres
+      </button>
+    </nav>
+
     <main class="main">
-      <div class="filters">
-      <div class="select-group">
-        <label for="departamento">Departamento</label>
-        <select id="departamento">
-          <option value="">Selecciona un departamento</option>
-        </select>
-      </div>
-      <div class="select-group">
-        <label for="ciudad">Ciudad</label>
-        <select id="ciudad" disabled>
-          <option value="">Selecciona una ciudad</option>
-        </select>
-      </div>
-      <div class="select-group">
-        <label for="tienda">Tienda</label>
-        <select id="tienda" disabled>
-          <option value="">Selecciona una tienda</option>
-        </select>
-      </div>
+      <div class="filters" id="filtersContainer">
     </div>
 
     <div class="card-container" id="cardContainer" aria-live="polite">
@@ -930,40 +973,187 @@
       }
     };
 
-    // ── Helper: clear select and set placeholder ──
-    function resetSelect(sel, placeholder) {
-      while (sel.options.length > 0) {
-        sel.remove(0);
+    const talleres = {
+      "ANTIOQUIA": {
+        "MEDELLÍN": [
+          { nombre: "Sede Alpujarra", direccion: "Calle 44 #51-33 Sede Alpujarra", telefono: "3004200527", telefonoDisplay: "300 420 0527" }
+        ]
+      },
+      "ATLÁNTICO": {
+        "BARANOA": [
+          { nombre: "Baranoa Barrio Caldas", direccion: "Carrera 19 Calle 13C Barrio Caldas", telefono: "3243620132", telefonoDisplay: "324 362 0132" }
+        ],
+        "BARRANQUILLA": [
+          { nombre: "Barranquilla Cra 21B", direccion: "Cra 21B #63C-65", telefono: "3114187598", telefonoDisplay: "311 418 7598" },
+          { nombre: "Barranquilla Sede Boston", direccion: "Cra 47 #59-39 (Sede Boston)", telefono: "3234361287", telefonoDisplay: "323 436 1287" }
+        ],
+        "GALAPA": [
+          { nombre: "Galapa Calle 10", direccion: "Calle 10 #22-63", telefono: "3234361287", telefonoDisplay: "323 436 1287" }
+        ],
+        "MALAMBO": [
+          { nombre: "Malambo Calle 10", direccion: "Calle 10 #17-76 Malambo", telefono: "3022058229", telefonoDisplay: "302 205 8229" }
+        ],
+        "PUERTO COLOMBIA": [
+          { nombre: "Puerto Colombia Calle 2", direccion: "Calle 2 #7-35", telefono: "3234361287", telefonoDisplay: "323 436 1287" }
+        ],
+        "SABANALARGA": [
+          { nombre: "Sabanalarga Sede La Cordialidad", direccion: "Cra 23 #27-110 La Cordialidad", telefono: "3234361287", telefonoDisplay: "323 436 1287" }
+        ],
+        "SANTO TOMÁS": [
+          { nombre: "Santo Tomás Cra 11", direccion: "Cra 11 #9-21 Local 2 Santo Tomás", telefono: "3104774788", telefonoDisplay: "310 477 4788" }
+        ],
+        "SOLEDAD": [
+          { nombre: "Soledad Calle 18", direccion: "Calle 18 #28A-29 Soledad", telefono: "3012870707", telefonoDisplay: "301 287 0707" }
+        ]
+      },
+      "BOLÍVAR": {
+        "CARTAGENA": [
+          { nombre: "Cartagena Calle 32", direccion: "Cl. 32 #No. 21-251 Pie de la Popa", telefono: "3017074027", telefonoDisplay: "301 707 4027" },
+          { nombre: "Cartagena Sede Basurto", direccion: "Calle 30 #32A-02 Basurto", telefono: "3017074027", telefonoDisplay: "301 707 4027" }
+        ],
+        "MAGANGUÉ": [
+          { nombre: "Magangué Barrio Pueblo Nuevo", direccion: "Barrio Pueblo Nuevo Calle 16 #11-12", telefono: "3125266071", telefonoDisplay: "312 526 6071" }
+        ]
+      },
+      "CESAR": {
+        "AGUACHICA": [
+          { nombre: "Aguachica Calle 5", direccion: "Calle 5 # 18-63", telefono: "3122052518", telefonoDisplay: "312 205 2518" }
+        ],
+        "BECERRIL": [
+          { nombre: "Becerril Kr 5", direccion: "Kr 5 #11-14", telefono: "", telefonoDisplay: "No disponible" }
+        ],
+        "BOSCONIA": [
+          { nombre: "Bosconia Calle 18", direccion: "Calle 18 #17A-55", telefono: "3226707547", telefonoDisplay: "322 670 7547" }
+        ],
+        "CODAZZI": [
+          { nombre: "Codazzi Cra 16", direccion: "Cra 16 #18-44, Local 1", telefono: "3226605797", telefonoDisplay: "322 660 5797" }
+        ],
+        "CURUMANÍ": [
+          { nombre: "Curumaní Cra 17", direccion: "Carrera 17 #05, frente a Brasilia", telefono: "3122060167", telefonoDisplay: "312 206 0167" }
+        ],
+        "LA JAGUA": [
+          { nombre: "La Jagua Calle 5", direccion: "Calle 5 #18-63", telefono: "3122067820", telefonoDisplay: "312 206 7820" }
+        ],
+        "VALLEDUPAR": [
+          { nombre: "Valledupar Calle 17", direccion: "Calle 17 #12-61 Centro", telefono: "3184364594", telefonoDisplay: "318 436 4594" },
+          { nombre: "Valledupar Los Manguitos", direccion: "Diagonal 21 #19-10 (Los Manguitos)", telefono: "3145513128", telefonoDisplay: "314 551 3128" },
+          { nombre: "Valledupar Tres Postes", direccion: "Calle 6C, Carrera 16 #105 Tres Postes", telefono: "3019106300", telefonoDisplay: "301 910 6300" }
+        ]
+      },
+      "CÓRDOBA": {
+        "LORICA": [
+          { nombre: "Santa Cruz Calle 4A", direccion: "Calle 4A #23A-12", telefono: "3013118311", telefonoDisplay: "301 311 8311" }
+        ],
+        "MONTERÍA": [
+          { nombre: "Montería Sede El Dorado", direccion: "Cra 9W #23-65 (Sede El Dorado)", telefono: "3234361307", telefonoDisplay: "323 436 1307" }
+        ],
+        "SAHAGÚN": [
+          { nombre: "Sahagún Calle 18", direccion: "Calle 18 Cr 1A Avenida Hospital", telefono: "3159411645", telefonoDisplay: "315 941 1645" }
+        ]
+      },
+      "CUNDINAMARCA": {
+        "BOGOTÁ": [
+          { nombre: "Bogotá Avenida Boyacá", direccion: "Avenida Boyacá 68B-41", telefono: "3214198411", telefonoDisplay: "321 419 8411" },
+          { nombre: "Bogotá Calle 28", direccion: "Avenida Calle 28 #17-60", telefono: "", telefonoDisplay: "No disponible" },
+          { nombre: "Bogotá Cra 30", direccion: "Avenida Cra 30 #41-25 EDS Texaco/Vanti", telefono: "", telefonoDisplay: "No disponible" }
+        ]
+      },
+      "LA GUAJIRA": {
+        "RIOHACHA": [
+          { nombre: "Riohacha Cra 15", direccion: "Carrera 15 #15-49", telefono: "3102201776", telefonoDisplay: "310 220 1776" }
+        ]
+      },
+      "MAGDALENA": {
+        "CIÉNAGA": [
+          { nombre: "Ciénaga Cra 13", direccion: "Cra 13 #18-29", telefono: "3233224643", telefonoDisplay: "323 322 4643" }
+        ],
+        "FUNDACIÓN": [
+          { nombre: "Fundación Cra 8", direccion: "Carrera 8 #9-82", telefono: "3019767616", telefonoDisplay: "301 976 7616" }
+        ],
+        "PIVIJAY": [
+          { nombre: "Pivijay Barrio la Bonga", direccion: "Cl 17 Cr 12 02 Barrio la Bonga", telefono: "3004672046", telefonoDisplay: "300 467 2046" }
+        ],
+        "SANTA MARTA": [
+          { nombre: "Santa Marta Av. Del Ferrocarril", direccion: "Av. Del Ferrocarril #15-03 (Ferrocarril)", telefono: "3024820047", telefonoDisplay: "302 482 0047" }
+        ]
+      },
+      "META": {
+        "VILLAVICENCIO": [
+          { nombre: "Villavicencio Av. 40", direccion: "Avenida 40 #26C-37 Villavicencio", telefono: "3046810874", telefonoDisplay: "304 681 0874" }
+        ]
+      },
+      "NORTE DE SANTANDER": {
+        "CÚCUTA": [
+          { nombre: "Cúcuta Av. Gran Colombia", direccion: "Avenida Gran Colombia 5E #39", telefono: "3112907630", telefonoDisplay: "311 290 7630" }
+        ]
+      },
+      "SANTANDER": {
+        "BUCARAMANGA": [
+          { nombre: "Bucaramanga Cra 33", direccion: "Cra 33 58-16", telefono: "3202465871", telefonoDisplay: "320 246 5871" }
+        ]
+      },
+      "SUCRE": {
+        "COROZAL": [
+          { nombre: "Corozal Cra 26", direccion: "Cra 26 32-21", telefono: "3242670796", telefonoDisplay: "324 267 0796" }
+        ],
+        "COVEÑAS": [
+          { nombre: "Coveñas Calle 3", direccion: "Calle 3A 3-9", telefono: "3017922175", telefonoDisplay: "301 792 2175" }
+        ],
+        "SINCELEJO": [
+          { nombre: "Sincelejo Calle 28", direccion: "Calle 28 #21-39 Av Luis Carlos Galán", telefono: "3022595365", telefonoDisplay: "302 259 5365" },
+          { nombre: "Sincelejo Galán", direccion: "Calle 20 #22B-90 (Galán)", telefono: "3102202900", telefonoDisplay: "310 220 2900" },
+          { nombre: "Sincelejo Las Peñitas", direccion: "Cra 25 #21-60 (Las Peñitas)", telefono: "3102200740", telefonoDisplay: "310 220 0740" }
+        ]
+      },
+      "VALLE DEL CAUCA": {
+        "BUGA": [
+          { nombre: "Buga Cra 9", direccion: "Carrera 9 #14-01", telefono: "3024296633", telefonoDisplay: "302 429 6633" }
+        ],
+        "CALI": [
+          { nombre: "Cali Cra 5", direccion: "Cra 5 #15-49 (Sede Centro)", telefono: "3151812511", telefonoDisplay: "315 181 2511" },
+          { nombre: "Cali La Merced", direccion: "Av 3 Norte 47N-48 (La Merced)", telefono: "3126809691", telefonoDisplay: "312 680 9691" }
+        ]
       }
-      const opt = document.createElement('option');
-      opt.value = '';
-      opt.textContent = placeholder;
-      sel.appendChild(opt);
-    }
+    };
 
-    // ── Helper: add option to select ──
-    function addOption(sel, value, text) {
-      const opt = document.createElement('option');
-      opt.value = value;
-      opt.textContent = text;
-      sel.appendChild(opt);
-    }
+    // ── Isotipo SVG string (static, safe for DOM insertion) ──
+    var isotipoSVG = '<svg class="ofero-f" viewBox="0 0 53.57 53.57" xmlns="http://www.w3.org/2000/svg"><path fill="#70D84A" d="M26.79,53.57C12.02,53.57,0,41.56,0,26.79S12.02,0,26.79,0s26.79,12.02,26.79,26.79-12.02,26.79-26.79,26.79M26.79,3.53C13.96,3.53,3.53,13.96,3.53,26.79s10.43,23.26,23.26,23.26,23.26-10.43,23.26-23.26S39.61,3.53,26.79,3.53"/><path fill="#70D84A" d="M41.41,12.82s-2.76.75-6.75,1.11c-3.76.37-4.81.25-8.5.51-6.75.28-9.63,3.67-10.7,14.12,1.22-2.93,5.04-6.41,9.8-6.94,2.77-.41,10.4-.16,13.27-2.34,1.99-1.68,2.89-6.46,2.89-6.46"/><path fill="#70D84A" d="M16.5,39.07c-.53,2.94,1.13,6.15,3.74,6.12h2.02s1.13-8.9,1.26-9.86c.6-3.66,2.72-4.45,5.24-4.71,3.23-.3,6.09-.84,7.28-2.51.84-1.3,1.31-2.49,1.49-3.69-3.48-1.03-9.81-.72-12.65.14-2.55.76-6.78,3.32-7.57,7.86l-.81,6.64Z"/></svg>';
 
-    // ── DOM Elements ──
-    const selDepto = document.getElementById('departamento');
-    const selCiudad = document.getElementById('ciudad');
-    const selTienda = document.getElementById('tienda');
-    const cardContainer = document.getElementById('cardContainer');
-    const cardName = document.getElementById('cardName');
-    const cardLocation = document.getElementById('cardLocation');
-    const cardAddress = document.getElementById('cardAddress');
-    const cardPhone = document.getElementById('cardPhone');
-    const cardDirections = document.getElementById('cardDirections');
+    // ── Tab config ──
+    var tabConfig = {
+      tiendas: {
+        title: '\u00a1Encuentra tu sede ' + isotipoSVG + ' m\u00e1s cercana!',
+        subtitle: 'Selecciona tu departamento, ciudad y sede para ver la informaci\u00f3n de contacto.',
+        pageTitle: 'OFERO \u2014 Encuentra tu tienda',
+        data: tiendas,
+        labels: { depto: 'Departamento', ciudad: 'Ciudad', item: 'Tienda', deptoPlaceholder: 'Selecciona un departamento', ciudadPlaceholder: 'Selecciona una ciudad', itemPlaceholder: 'Selecciona una tienda' }
+      },
+      talleres: {
+        title: '\u00a1Encuentra tu taller ' + isotipoSVG + ' m\u00e1s cercano!',
+        subtitle: 'Selecciona tu departamento, ciudad y taller autorizado para ver la informaci\u00f3n de contacto.',
+        pageTitle: 'OFERO \u2014 Encuentra tu taller',
+        data: talleres,
+        labels: { depto: 'Departamento', ciudad: 'Ciudad', item: 'Taller', deptoPlaceholder: 'Selecciona un departamento', ciudadPlaceholder: 'Selecciona una ciudad', itemPlaceholder: 'Selecciona un taller' }
+      }
+    };
 
-    // ── Populate Departamentos ──
-    Object.keys(tiendas).sort().forEach(function(depto) {
-      addOption(selDepto, depto, depto);
-    });
+    // ── Detect subdomain ──
+    var activeTab = (function() {
+      var h = window.location.hostname;
+      if (h.startsWith('talleres.')) return 'talleres';
+      return 'tiendas';
+    })();
+
+    // ── DOM refs ──
+    var heroTitle = document.getElementById('heroTitle');
+    var heroSubtitle = document.getElementById('heroSubtitle');
+    var filtersContainer = document.getElementById('filtersContainer');
+    var cardContainer = document.getElementById('cardContainer');
+    var cardName = document.getElementById('cardName');
+    var cardLocation = document.getElementById('cardLocation');
+    var cardAddress = document.getElementById('cardAddress');
+    var cardPhone = document.getElementById('cardPhone');
+    var cardDirections = document.getElementById('cardDirections');
 
     function hideCard() {
       cardContainer.classList.remove('visible');
@@ -975,66 +1165,139 @@
       cardContainer.classList.add('visible');
     }
 
-    // ── Event: Departamento ──
-    selDepto.addEventListener('change', function() {
-      resetSelect(selCiudad, 'Selecciona una ciudad');
-      resetSelect(selTienda, 'Selecciona una tienda');
-      selTienda.disabled = true;
-      hideCard();
+    // ── Helper: create a select-group ──
+    function createSelectGroup(id, label, placeholder, disabled) {
+      var group = document.createElement('div');
+      group.className = 'select-group';
+      var lbl = document.createElement('label');
+      lbl.htmlFor = id;
+      lbl.textContent = label;
+      var sel = document.createElement('select');
+      sel.id = id;
+      if (disabled) sel.disabled = true;
+      var opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = placeholder;
+      sel.appendChild(opt);
+      group.appendChild(lbl);
+      group.appendChild(sel);
+      return { group: group, select: sel };
+    }
 
-      var depto = selDepto.value;
-      if (!depto) {
-        selCiudad.disabled = true;
-        return;
-      }
+    function addOption(sel, value, text) {
+      var opt = document.createElement('option');
+      opt.value = value;
+      opt.textContent = text;
+      sel.appendChild(opt);
+    }
 
-      selCiudad.disabled = false;
-      Object.keys(tiendas[depto]).sort().forEach(function(ciudad) {
-        addOption(selCiudad, ciudad, ciudad);
-      });
-    });
+    function resetSelect(sel, placeholder) {
+      while (sel.options.length > 0) sel.remove(0);
+      var opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = placeholder;
+      sel.appendChild(opt);
+    }
 
-    // ── Event: Ciudad ──
-    selCiudad.addEventListener('change', function() {
-      resetSelect(selTienda, 'Selecciona una tienda');
-      hideCard();
+    // ── Build filters for active tab ──
+    function buildFilters() {
+      var cfg = tabConfig[activeTab];
+      var l = cfg.labels;
+      filtersContainer.textContent = '';
 
-      var depto = selDepto.value;
-      var ciudad = selCiudad.value;
-      if (!ciudad) {
-        selTienda.disabled = true;
-        return;
-      }
+      var depto = createSelectGroup('departamento', l.depto, l.deptoPlaceholder, false);
+      var ciudad = createSelectGroup('ciudad', l.ciudad, l.ciudadPlaceholder, true);
+      var itemSel = createSelectGroup('item', l.item, l.itemPlaceholder, true);
 
-      selTienda.disabled = false;
-      tiendas[depto][ciudad].forEach(function(t, i) {
-        addOption(selTienda, i, t.nombre);
-      });
-    });
+      Object.keys(cfg.data).sort().forEach(function(d) { addOption(depto.select, d, d); });
 
-    // ── Event: Tienda ──
-    selTienda.addEventListener('change', function() {
-      var depto = selDepto.value;
-      var ciudad = selCiudad.value;
-      var idx = selTienda.value;
-
-      if (idx === '') {
+      depto.select.addEventListener('change', function() {
+        resetSelect(ciudad.select, l.ciudadPlaceholder);
+        resetSelect(itemSel.select, l.itemPlaceholder);
+        itemSel.select.disabled = true;
         hideCard();
-        return;
-      }
+        var val = depto.select.value;
+        if (!val) { ciudad.select.disabled = true; return; }
+        ciudad.select.disabled = false;
+        Object.keys(cfg.data[val]).sort().forEach(function(c) { addOption(ciudad.select, c, c); });
+      });
 
-      var t = tiendas[depto][ciudad][idx];
+      ciudad.select.addEventListener('change', function() {
+        resetSelect(itemSel.select, l.itemPlaceholder);
+        hideCard();
+        var d = depto.select.value;
+        var c = ciudad.select.value;
+        if (!c) { itemSel.select.disabled = true; return; }
+        itemSel.select.disabled = false;
+        cfg.data[d][c].forEach(function(t, i) { addOption(itemSel.select, i, t.nombre); });
+      });
+
+      itemSel.select.addEventListener('change', function() {
+        var d = depto.select.value;
+        var c = ciudad.select.value;
+        var idx = itemSel.select.value;
+        if (idx === '') { hideCard(); return; }
+        var t = cfg.data[d][c][idx];
+        populateCard(t, c + ' \u00b7 ' + d, c);
+      });
+
+      filtersContainer.appendChild(depto.group);
+      filtersContainer.appendChild(ciudad.group);
+      filtersContainer.appendChild(itemSel.group);
+    }
+
+    // ── Populate card ──
+    function populateCard(t, locationText, ciudad) {
       cardName.textContent = t.nombre;
-      cardLocation.textContent = ciudad + ' \u00b7 ' + depto;
+      cardLocation.textContent = locationText;
       cardAddress.textContent = t.direccion;
-      cardPhone.textContent = t.telefonoDisplay;
-      cardPhone.href = 'tel:+57' + t.telefono;
+
+      if (t.telefono) {
+        cardPhone.textContent = t.telefonoDisplay;
+        cardPhone.href = 'tel:+57' + t.telefono;
+        cardPhone.style.pointerEvents = '';
+        cardPhone.style.color = '';
+      } else {
+        cardPhone.textContent = 'No disponible';
+        cardPhone.removeAttribute('href');
+        cardPhone.style.pointerEvents = 'none';
+        cardPhone.style.color = 'var(--ofero-gray-dark)';
+      }
 
       var query = encodeURIComponent(t.direccion + ', ' + ciudad + ', Colombia');
       cardDirections.href = 'https://www.google.com/maps/search/?api=1&query=' + query;
 
       showCard();
+    }
+
+    // ── Switch tab ──
+    function switchTab(tabName) {
+      activeTab = tabName;
+      var cfg = tabConfig[tabName];
+
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        var isActive = btn.dataset.tab === tabName;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-selected', isActive);
+      });
+
+      document.title = cfg.pageTitle;
+      heroTitle.innerHTML = cfg.title; // static SVG string, no user input
+      heroSubtitle.textContent = cfg.subtitle;
+
+      hideCard();
+      buildFilters();
+    }
+
+    // ── Tab click listeners ──
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        switchTab(this.dataset.tab);
+      });
     });
+
+    // ── Init ──
+    switchTab(activeTab);
   </script>
 </body>
 </html>
