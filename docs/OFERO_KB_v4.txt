@@ -795,7 +795,7 @@ Tienda 1 en SAHAGÚN:
 DEPARTAMENTO: CUNDINAMARCA
 ========================================
 
-CIUDAD: BOGOTÁ | TIENDAS: 30
+CIUDAD: BOGOTÁ | TIENDAS: 31
 
 Tienda 1 en BOGOTÁ:
   Nombre: Ofero Alamos
@@ -946,6 +946,11 @@ Tienda 30 en BOGOTÁ:
   Nombre: Tienda Virtual
   Dirección: VIRTUAL
   Teléfono: 300 1948686
+
+Tienda 31 en BOGOTÁ:
+  Nombre: Ofero Bogotá Calle 122
+  Dirección: Calle 122 # 18c-51
+  Teléfono: 300 5328013
 
 --- FIN BOGOTÁ ---
 
@@ -1476,7 +1481,7 @@ Tienda 1 en BUGA:
 
 --- FIN BUGA ---
 
-CIUDAD: CALI | TIENDAS: 13
+CIUDAD: CALI | TIENDAS: 14
 
 Tienda 1 en CALI:
   Nombre: Ofero Cali Carrera 23
@@ -1542,6 +1547,11 @@ Tienda 13 en CALI:
   Nombre: Ofero Valle Grande
   Dirección: Carrera 23 no 89-19 valle grande local 8
   Teléfono: 324 4472336
+
+Tienda 14 en CALI:
+  Nombre: Ofero Meléndez Cali
+  Dirección: Cra 94 # 4d-41
+  Teléfono: 320 5170595
 
 --- FIN CALI ---
 
